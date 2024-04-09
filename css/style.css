@@ -5,3 +5,46 @@
     list-style: none;
     box-sizing: border-box;
 }
+  
+/* Loader div styles */
+.loader {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Loader billede styles */
+.loadingrocket {
+    width: 80px;
+    position: absolute;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    animation: actionAndTilt 3s infinite linear; 
+}
+
+/* Animation defineres */
+@keyframes actionAndTilt {
+    0% {
+        transform: translateY(0) translatex(0px) rotate(0deg);
+    }
+    25% {
+        transform: translateY(-30px) translatex(-20px) rotate(-10deg);
+    }
+    50% {
+        transform: translateY(0px) translatex(0px) rotate(0deg);
+    }
+    75% {
+        transform: translateY(-30px)  translatex(20px) rotate(10deg);
+    }
+    100% {
+        transform: translateY(0) translatex(0px) rotate(0deg);
+    }
+}
+
+/* Side indhold gemmes */
+.hidden {
+    display: none;
+}
