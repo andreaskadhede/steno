@@ -59,6 +59,7 @@ body {
     background-attachment: fixed;
     overflow: hidden;
     z-index: 0;
+    color: var(--dark-blue);
 }
 
 h1 {
@@ -93,7 +94,7 @@ h2 {
     bottom: -50%;
     position: absolute;
     display: flex;
-    animation: flying 3s linear; 
+    animation: flying 3s linear;
 }
 
 /* Animation defineres */
@@ -119,7 +120,7 @@ h2 {
 
 body{
     height: 100vh;
-    
+
     overflow: hidden;
 }
 
@@ -137,16 +138,16 @@ body{
    text-align: center;
    top: -60px;
    position: relative;
-    z-index: 1; 
+    z-index: 1;
 }
 
 .logo-index {
-    position: absolute; 
-    top: 60px; 
-    left: 80px; 
+    position: absolute;
+    top: 60px;
+    left: 80px;
     width: 80px;
-    z-index: 1; 
-    transform: translate(-50%, -50%); 
+    z-index: 1;
+    transform: translate(-50%, -50%);
 }
 
 .stenvinkera {
@@ -157,7 +158,7 @@ body{
     transform: scaleX(-1);
     z-index: 2;
     position: absolute;
-    
+
 }
 
 .boblea {
@@ -186,7 +187,7 @@ body{
     z-index: 1;
 }
 .da-button {
-    background-color: var(--hvid); 
+    background-color: var(--hvid);
     border: none;
     color: var(--dark-blue);
     padding: 18px 18px;
@@ -196,17 +197,17 @@ body{
     font-size: 30px;
     margin: 4px 2px;
     cursor: pointer;
-    border-radius: 100px; 
+    border-radius: 100px;
     width: 80px;
     margin-left: 80%;
     top: 25px;
-    z-index: 1; 
+    z-index: 1;
     position: relative;
     border: solid 2px  var(--dark-blue);
 }
 
 .en-button {
-    background-color: var(--hvid); 
+    background-color: var(--hvid);
     border: none;
     color: var(--dark-blue);
     padding: 18px 18px;
@@ -220,7 +221,7 @@ body{
     margin-left: 88%;
     width: 80px;
     top: -58px;
-    z-index: 1; 
+    z-index: 1;
     position: relative;
     border: solid 2px  var(--dark-blue);
 }
@@ -236,9 +237,9 @@ body{
     width: 200px;
     top: -30% ;
     margin-left: 165px;
-    z-index: 1; 
+    z-index: 1;
     position: relative;
-   
+
 }
 /* Index css slut*/
 /*Vil du med - start*/
@@ -250,7 +251,7 @@ body{
 .vildumed-container img {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: cover;
 }
 
 .vildumed-content {
@@ -350,39 +351,43 @@ body{
 .land {
     position: absolute;
     width: 100%;
+    margin-top: -5%;
     z-index: 1;
 }
 /* Styling af afsted.html slut */
 /* Styling af cockpit.html start */
 .cockpitc {
     display: flex;
+    flex-direction: column;
 }
-    
+
 .cockpittop {
     position: sticky;
     width: 100%;
+    top: 0;
     z-index: 2;
 }
 
 .cockpitbund {
-    position: sticky;
+    position: absolute;
     width: 100%;
+    bottom: 0;
     z-index: 2;
 }
-    
+
 .planeter {
     position: absolute;
     display: flex;
     z-index: 1;
 }
-    
+
 .planeter a .solenpit {
     position: absolute;
     height: 700px;
     width: auto;
     left: -22rem;
 }
-    
+
 .planeter a .merkurpit {
     position: absolute;
     height: 73px;
@@ -390,7 +395,7 @@ body{
     top: 20rem;
     left: 18rem;
 }
-    
+
 .planeter a .venuspit {
     position: absolute;
     height: 110px;
@@ -398,7 +403,7 @@ body{
     top: 12rem;
     left: 21rem;
 }
-    
+
 .planeter a .jordenpit {
     position: absolute;
     height: 86px;
@@ -406,7 +411,7 @@ body{
     top: 17rem;
     left: 30rem;
 }
-    
+
 .planeter a .marspit {
     position: absolute;
     height: 78px;
@@ -414,7 +419,7 @@ body{
     top: 10rem;
     left: 34rem;
 }
-    
+
 .planeter a .jupiterpit {
     position: absolute;
     height: 232px;
@@ -422,7 +427,7 @@ body{
     top: 7rem;
     left: 40rem;
 }
-    
+
 .planeter a .saturnpit {
     position: absolute;
     height: 185px;
@@ -430,7 +435,7 @@ body{
     top: 15rem;
     left: 53rem;
 }
-    
+
 .planeter a .uranuspit {
     position: absolute;
     height: 111px;
@@ -438,7 +443,7 @@ body{
     top: 13rem;
     left: 65rem;
 }
-    
+
 .planeter a .neptunpit {
     position: absolute;
     height: 88px;
@@ -450,8 +455,19 @@ body{
 .hjemknap {
     position: absolute;
     width: 140px;
-    bottom: 30%;
+    bottom: 35%;
     left: 44.5%;
+    z-index: 4;
+}
+
+.boblec {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 25%;
+    top: 10%;
+    width: 213px;
     z-index: 4;
 }
 /* Styling af cockpit.html slut */
@@ -478,7 +494,7 @@ body{
     left: -15%;
 }
 
-.neptun-tekst {
+.tekst-højre {
     display: flex;
     grid-template-columns: 2;
     flex-direction: column;
@@ -487,14 +503,15 @@ body{
     justify-content: center;
     align-self: flex-end;
     left: 50%;
-    top: 30%;
+    top: 20%;
     position: absolute;
 }
-.neptun-tekst h1 {
+
+.tekst-højre h1 {
     color: var(--neptun);
 }
 
-.neptun-tekst p {
+.tekst-højre p {
     font-size: 40px;
     color: var(--neptun);
     padding: 0 15px;
@@ -512,16 +529,19 @@ body{
 .taleboble-neptun img {
     width: 100%;
     position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .taleboble-neptun-tekst {
-    width: 100%;
+    width: 90%;
+    margin: 0 5%;
     position: absolute;
+    top: 45px;
+    left: 0;
 }
 
-.taleboble-neptun 
-
-.sten-sidder {
+#sten-sidder {
     width: 300px;
     transform: scaleX(-1);
     z-index: 2;
@@ -530,80 +550,253 @@ body{
     left: 20%;
 }
 
+.popup-neptun p {
+    font-size: 40px;
+    color: var(--neptun);
+    position: absolute;
+    width: 40%;
+    text-wrap: wrap;
+    text-align: center;
+    margin-left: 5%;
+    top: 25%;
+}
+.popup-neptun img {
+    width: 85%;
+    position: absolute;
+    top: 37%;
+    left: 30%;
+}
+
+#sten-blæser {
+    width: 40%;
+    position: absolute;
+    top: 25%;
+    left: 45%;
+}
+
+#kryds {
+    width: 38px;
+    position: absolute;
+    z-index: 5;
+    top: 3.5vh;
+    left: 95vw
+}
+
 
 
 /* Slut */
 
+/*Jorden Start*/
+.jorden {
+    position: absolute;
+    width: 1000px;
+    z-index: 1;
+    top: 45%;
+    left: -15%;
+}
+
+.jorden-tekst {
+    display: flex;
+    grid-template-columns: 2;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    justify-content: center;
+    align-self: flex-end;
+    left: 50%;
+    top: 30%;
+    position: absolute;
+}
+
+.jorden-tekst h1 {
+    color: var(--jorden);
+}
+
+.jorden-tekst p {
+    font-size: 40px;
+    color: var(--jorden);
+    padding: 0 15px;
+}
+
+.taleboble-jorden {
+    width: 250px;
+    z-index: 3;
+    position: absolute;
+    top: 5%;
+    left: 15%;
+    text-align: center;
+    
+}
+
+.taleboble-jorden img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(-1);
+}
+
+.taleboble-jorden h2 p {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #1E2346;
+}
+
+.sten-jorden {
+    width: 300px;
+    transform: scaleX(-1);
+    z-index: 2;
+    position: absolute;
+    top: 30%;
+    left: 20%; 
+}
+
+/*Jorden Slut*/
+
+/* uranus start */
+.uranus {
+    position: absolute;
+    width: 1000px;
+    z-index: 1;
+    top: 45%;
+    left: -15%;
+}
+
+.taleboble-uranus {
+    width: 250px;
+    z-index: 3;
+    position: absolute;
+    top: 10%;
+    left: 34%;
+    text-align: center;
+}
+
+.taleboble-uranus img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.taleboble-uranus-tekst {
+    width: 90%;
+    margin: 0 5%;
+    position: absolute;
+    top: 45px;
+    left: 0;
+}
+
+#sten-fryser {
+    width: 300px;
+    transform: scaleX(-1);
+    z-index: 2;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
+
+.popup-uranus p {
+    font-size: 40px;
+    color: var(--neptun);
+    position: absolute;
+    width: 40%;
+    text-wrap: wrap;
+    text-align: center;
+    margin-left: 5%;
+    top: 25%;
+}
+.popup-uranus img {
+    width: 85%;
+    position: absolute;
+    top: 37%;
+    left: 30%;
+}
+
+#uranus-drejer {
+    width: 40%;
+    position: absolute;
+    top: 25%;
+    left: 45%;
+}
+
+
+/* uranus slut */
+
+
 .slut-raket{
         position: absolute;
-        width: 30%;        
+        width: 30%;
         right: 15%;
-        bottom: -25%;
+        bottom: -10%;
         z-index: 2;
 }
 
 .slut-sten{
     position: absolute;
-    width: 25%;        
+    width: 25%;
     right: 60%;
-    bottom: -25%;
+    bottom: -10%;
     z-index: 2;
     transform: scaleX(-1);
 }
 
 .slut-taleboble{
     position: absolute;
-    width: 24%; 
-    top: 28%;       
+    width: 24%;
+    top: 15%;
     right: 40%;
     bottom: -25%;
     z-index: 2;
 }
 
 .logo-slut {
-    position: absolute; 
-    top: 35%; 
-    left: 3%; 
+    position: absolute;
+    top: 18%;
+    left: 3%;
     width: 80px;
-    z-index: 1; 
+    z-index: 1;
 }
 
 .spil-igen{
-    background-color: var(--hvid); 
+    background-color: var(--hvid);
     color: var(--dark-blue);
-    padding: 18px 18px;
+    padding: 18px 30px;
     font-size: 25px;
     margin: 4px 2px;
     cursor: pointer;
-    border-radius: 100px; 
+    border-radius: 100px;
     width: 8%;
     height: 15%;
-    margin-left:-2%; 
+    margin-left:-2%;
     border: solid 2px  var(--dark-blue);
     position: absolute;
     bottom: -25%;
-    left: 5%; 
-
-    z-index: 2; 
-
+    left: 5%;
+    z-index: 2;
+   top: 90%;
 }
 
-.en-button {
-    background-color: var(--hvid); 
-    border: none;
+.slut-h2{
     color: var(--dark-blue);
-    padding: 18px 18px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 30px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 100px; /* Rounded corners */
-    margin-left: 88%;
-    width: 80px;
-    top: -58px;
-    z-index: 1; 
-    position: relative;
-    border: solid 2px  var(--dark-blue);
+    position: absolute;
+    color: var(--dark-blue);
+    font-size: 40px;
+    margin-left: 40%;
+     margin-top: 12%;
+     z-index: 3;
 }
+
+.slut-p{
+    color: var(--dark-blue);
+    position: absolute;
+    color: var(--dark-blue);
+    font-size: 20px;
+    margin-right: 45%;
+    margin-left: 42%;
+     margin-top: 16%;
+     z-index: 3;
+  
+}
+
