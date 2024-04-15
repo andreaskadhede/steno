@@ -50,6 +50,7 @@ letter-spacing er vigtig for at få det til at ligne vores mockups
 
 body {
     font-family: "aupassata";
+    overflow: hidden;
 }
 
 h1 {
@@ -172,6 +173,7 @@ body{
     position: absolute;
     height: 832px;
     z-index: 1;
+}
 .da-button {
     background-color: var(--hvid); 
     border: none;
