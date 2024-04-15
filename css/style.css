@@ -50,6 +50,7 @@ letter-spacing er vigtig for at få det til at ligne vores mockups
 
 body {
     font-family: "aupassata";
+    overflow: hidden;
 }
 
 h1 {
@@ -80,29 +81,26 @@ h2 {
 /* Loader billede styles */
 .loadingrocket {
     width: 20%;
-    margin-left: 100px;
     margin-top: 100px;
+    bottom: -50%;
     position: absolute;
     display: flex;
-    animation: actionAndTilt 3s infinite linear; 
+    animation: flying 3s linear; 
 }
 
 /* Animation defineres */
-@keyframes actionAndTilt {
+@keyframes flying {
     0% {
-        transform: translateY(0) translatex(0px) rotate(0deg);
+        transform: translateY(0) translatex(0px) rotate(15deg);
     }
-    25% {
-        transform: translateY(30px) translatex(20px) rotate(-10deg);
+    33% {
+        transform: translateY(-50vh) translatex(20vw) rotate(57deg);
     }
-    50% {
-        transform: translateY(0px) translatex(0px) rotate(0deg);
-    }
-    75% {
-        transform: translateY(-30px)  translatex(20px) rotate(10deg);
+    66% {
+        transform: translateY(-80vh) translatex(50vw) rotate(50deg);
     }
     100% {
-        transform: translateY(0) translatex(0px) rotate(0deg);
+        transform: translateY(-150vh) translatex(80vw) rotate(10deg);
     }
 }
 
@@ -142,6 +140,40 @@ body{
     z-index: 1; 
 }
 
+.stenvinkera {
+    position: absolute;
+    height: 435px;
+    left: 117px;
+    bottom: 96px;
+    transform: scaleX(-1);
+    z-index: 2;
+}
+
+.boblea {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 550px;
+    top: 215px;
+}
+
+.taleboblea {
+    position: absolute;
+    height: 324px;
+    z-index: 2;
+}
+
+.pa {
+    position: absolute;
+    z-index: 3;
+}
+
+.landa {
+    position: absolute;
+    height: 832px;
+    z-index: 1;
+}
 .da-button {
     background-color: var(--hvid); 
     border: none;
@@ -197,8 +229,53 @@ body{
 }
 
 
-
-
 /*Vil du med - start*/
 
+
+
+.vildumed-container {
+    position: relative;
+}
+
+/*Vil du med - slut*/
+.vildumed-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the background image covers the whole container */
+}
+
+.vildumed-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.character {
+    width: 50%; /* Adjust as needed */
+    transform: scaleX(-1);
+}
+
+.character img {
+    width: 100%;
+    height: auto;
+}
+
+.vildumed-text {
+    width: 50%; /* Adjust as needed */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+
+.vildumed-button {
+    display: inline-block;
+    text-decoration: none;
+    width: 300px;
+    margin-left: 150px;
+}
 /*Vil du med - slut*/
