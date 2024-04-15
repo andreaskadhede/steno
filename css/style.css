@@ -51,6 +51,14 @@ letter-spacing er vigtig for at få det til at ligne vores mockups
 body {
     font-family: "aupassata";
     overflow: hidden;
+    background-image: url(/img/baggrund/space_baggrund.webp);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    overflow: hidden;
+    z-index: 0;
 }
 
 h1 {
@@ -115,20 +123,21 @@ body{
     overflow: hidden;
 }
 
-/* Index css */
+/* Index css start*/
 
-
+.skyer-baggrund{
+    background-image: url(/img/baggrund/jord_skyer.gif);
+}
 
 .h1-index{
     color: var(--dark-blue);
    font-size: 120px;
    font-style: solid;
-    margin-top: -850px;
+    margin-top: -20px;
    text-align: center;
    top: -60px;
    position: relative;
     z-index: 1; 
-   
 }
 
 .logo-index {
@@ -136,8 +145,8 @@ body{
     top: 60px; 
     left: 80px; 
     width: 80px;
-    transform: translate(-50%, -50%); 
     z-index: 1; 
+    transform: translate(-50%, -50%); 
 }
 
 .stenvinkera {
@@ -147,6 +156,8 @@ body{
     bottom: 96px;
     transform: scaleX(-1);
     z-index: 2;
+    position: absolute;
+    
 }
 
 .boblea {
@@ -186,8 +197,9 @@ body{
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 100px; 
+    width: 80px;
     margin-left: 80%;
-    top: -848px;
+    top: 25px;
     z-index: 1; 
     position: relative;
     border: solid 2px  var(--dark-blue);
@@ -206,7 +218,8 @@ body{
     cursor: pointer;
     border-radius: 100px; /* Rounded corners */
     margin-left: 88%;
-    top: -930px;
+    width: 80px;
+    top: -58px;
     z-index: 1; 
     position: relative;
     border: solid 2px  var(--dark-blue);
@@ -227,14 +240,11 @@ body{
     position: relative;
    
 }
-
-
+/* Index css slut*/
 /*Vil du med - start*/
-
-
-
 .vildumed-container {
     position: relative;
+    display: flex;
 }
 
 .vildumed-container img {
@@ -256,19 +266,22 @@ body{
 .character {
     width: 50%;
     transform: scaleX(-1);
+
 }
 
 .character img {
     width: 100%;
-    height: auto;
 }
 
 .vildumed-text {
-    width: 50%; 
-    padding: 20px;
-    box-sizing: border-box;
-    padding-right: 220px;
     color: #1E2346;
+    width: 40%;
+    margin-right: 10%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .vildumed-text h2{
@@ -277,30 +290,180 @@ body{
 }
 
 .vildumed-text p{
-font-family: au passata;
-font-size: 35px;
-text-align: center;
+    font-size: 35px;
+    text-align: center;
+    padding: 20px;
+
 }
-
-
 
 .vildumed-button {
     display: inline-block;
     align-items: center;
     text-decoration: none;
     width: 230px;
-    margin-left: 190px;
     margin-bottom: 50px;
 }
 /*Vil du med - slut*/
 
+/* Styling af afsted.html start */
+.afsted {
+    display: flex;
+}
+
+.raketa {
+    position: absolute;
+    height: 615px;
+    right: 190px;
+    bottom: 116px;
+    z-index: 2;
+}
+
+.stenvinkera {
+    position: absolute;
+    height: 435px;
+    left: 117px;
+    bottom: 96px;
+    transform: scaleX(-1);
+    z-index: 2;
+}
+
+.boblea {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 550px;
+    top: 200px;
+}
+
+.taleboblea {
+    position: absolute;
+    height: 324px;
+    z-index: 2;
+}
+
+.pa {
+    position: absolute;
+    z-index: 3;
+}
+
+.land {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+/* Styling af afsted.html slut */
+/* Styling af cockpit.html start */
+.cockpitc {
+    display: flex;
+}
+    
+.cockpittop {
+    position: sticky;
+    width: 100%;
+    z-index: 2;
+}
+
+.cockpitbund {
+    position: sticky;
+    width: 100%;
+    z-index: 2;
+}
+    
+.planeter {
+    position: absolute;
+    display: flex;
+    z-index: 1;
+}
+    
+.planeter a .solenpit {
+    position: absolute;
+    height: 700px;
+    width: auto;
+    left: -22rem;
+}
+    
+.planeter a .merkurpit {
+    position: absolute;
+    height: 73px;
+    width: auto;
+    top: 20rem;
+    left: 18rem;
+}
+    
+.planeter a .venuspit {
+    position: absolute;
+    height: 110px;
+    width: auto;
+    top: 12rem;
+    left: 21rem;
+}
+    
+.planeter a .jordenpit {
+    position: absolute;
+    height: 86px;
+    width: auto;
+    top: 17rem;
+    left: 30rem;
+}
+    
+.planeter a .marspit {
+    position: absolute;
+    height: 78px;
+    width: auto;
+    top: 10rem;
+    left: 34rem;
+}
+    
+.planeter a .jupiterpit {
+    position: absolute;
+    height: 232px;
+    width: auto;
+    top: 7rem;
+    left: 40rem;
+}
+    
+.planeter a .saturnpit {
+    position: absolute;
+    height: 185px;
+    width: auto;
+    top: 15rem;
+    left: 53rem;
+}
+    
+.planeter a .uranuspit {
+    position: absolute;
+    height: 111px;
+    width: auto;
+    top: 13rem;
+    left: 65rem;
+}
+    
+.planeter a .neptunpit {
+    position: absolute;
+    height: 88px;
+    width: auto;
+    top: 22rem;
+    left: 70rem;
+}
+
+.hjemknap {
+    position: absolute;
+    width: 140px;
+    bottom: 30%;
+    left: 44.5%;
+    z-index: 4;
+}
+/* Styling af cockpit.html slut */
 
 /* Planeter */
 .tilbage-raket {
     transform: rotate(270deg);
-    width: 5px;
-    z-index: 150px;
+    width: 120px;
+    z-index: 5;
     position: absolute;
+    left: 50px;
+    top: -15px;
 }
 
 .tilbage-raket img {
@@ -308,9 +471,139 @@ text-align: center;
 }
 
 .neptun {
-    width: 100px;
+    position: absolute;
+    width: 1000px;
+    z-index: 1;
+    top: 45%;
+    left: -15%;
+}
+
+.neptun-tekst {
+    display: flex;
+    grid-template-columns: 2;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    justify-content: center;
+    align-self: flex-end;
+    left: 50%;
+    top: 30%;
+    position: absolute;
+}
+.neptun-tekst h1 {
+    color: var(--neptun);
+}
+
+.neptun-tekst p {
+    font-size: 40px;
+    color: var(--neptun);
+    padding: 0 15px;
 }
 
 .taleboble-neptun {
-    width: 100px;
+    width: 250px;
+    z-index: 3;
+    position: absolute;
+    top: 10%;
+    left: 34%;
+    text-align: center;
+}
+
+.taleboble-neptun img {
+    width: 100%;
+    position: absolute;
+}
+
+.taleboble-neptun-tekst {
+    width: 100%;
+    position: absolute;
+}
+
+.taleboble-neptun 
+
+.sten-sidder {
+    width: 300px;
+    transform: scaleX(-1);
+    z-index: 2;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
+
+
+
+/* Slut */
+
+.slut-raket{
+        position: absolute;
+        width: 30%;        
+        right: 15%;
+        bottom: -25%;
+        z-index: 2;
+}
+
+.slut-sten{
+    position: absolute;
+    width: 25%;        
+    right: 60%;
+    bottom: -25%;
+    z-index: 2;
+    transform: scaleX(-1);
+}
+
+.slut-taleboble{
+    position: absolute;
+    width: 24%; 
+    top: 28%;       
+    right: 40%;
+    bottom: -25%;
+    z-index: 2;
+}
+
+.logo-slut {
+    position: absolute; 
+    top: 35%; 
+    left: 3%; 
+    width: 80px;
+    z-index: 1; 
+}
+
+.spil-igen{
+    background-color: var(--hvid); 
+    color: var(--dark-blue);
+    padding: 18px 18px;
+    font-size: 25px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 100px; 
+    width: 8%;
+    height: 15%;
+    margin-left:-2%; 
+    border: solid 2px  var(--dark-blue);
+    position: absolute;
+    bottom: -25%;
+    left: 5%; 
+
+    z-index: 2; 
+
+}
+
+.en-button {
+    background-color: var(--hvid); 
+    border: none;
+    color: var(--dark-blue);
+    padding: 18px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 100px; /* Rounded corners */
+    margin-left: 88%;
+    width: 80px;
+    top: -58px;
+    z-index: 1; 
+    position: relative;
+    border: solid 2px  var(--dark-blue);
 }
