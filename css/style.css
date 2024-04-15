@@ -17,6 +17,7 @@
     --jorden: #62B264;
     --venus: #DFC69A;
     --merkur: #BFBDC5;
+    --hvid: #F2F2F2
 }
 /* For at bruge disse farver skrives det således:
 
@@ -49,21 +50,17 @@ letter-spacing er vigtig for at få det til at ligne vores mockups
 
 body {
     font-family: "aupassata";
-    overflow: hidden;
 }
 
 h1 {
     font-family: 'phosphate';
+    font-size: 100px;
 }
 
 h2 {
     font-family: "Baloo 2", sans-serif;
 }
 
-p {
-    font-family: "aupassata";
-}
-  
 /* Loader div styles */
 .loader {
     display: flex;
@@ -114,54 +111,78 @@ p {
     display: none;
 }
 
-/********************* Styling af afsted.html *********************/
-.afsted {
-    display: flex;
+body{
+    height: 100vh;
     
+    overflow: hidden;
 }
 
-.skyerbaggrunda {
-    position: sticky;
-    width: 1280px;
-    z-index: 0;
+/* Index css */
+
+
+
+.h1-index{
+    color: var(--dark-blue);
+   font-size: 120px;
+   font-style: solid;
+    margin-top: -850px;
+   text-align: center;
+   top: -60px;
+   position: relative;
+    z-index: 1; 
+   
 }
 
-.raketa {
-    position: absolute;
-    height: 615px;
-    right: 190px;
-    bottom: 116px;
-    z-index: 2;
+.logo-index {
+    position: absolute; 
+    top: 60px; 
+    left: 80px; 
+    width: 80px;
+    transform: translate(-50%, -50%); 
+    z-index: 1; 
 }
 
-.stenvinkera {
-    position: absolute;
-    height: 435px;
-    z-index: 2;
+.da-button {
+    background-color: var(--hvid); 
+    border: none;
+    color: var(--dark-blue);
+    padding: 18px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 100px; /* Rounded corners */
+    margin-left: 80%;
+    top: -835px;
+    z-index: 1; 
+    position: relative;
 }
 
-.taleboblea {
-    position: absolute;
-    height: 324px;
-    z-index: 2;
+.en-button {
+    background-color: var(--hvid); 
+    border: none;
+    color: var(--dark-blue);
+    padding: 18px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 100px; /* Rounded corners */
+    margin-left: 88%;
+    top: -915px;
+    z-index: 1; 
+    position: relative;
 }
 
-.pa {
-    position: absolute;
-    z-index: 3;
-}
-
-.boblea {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.landa {
-    position: absolute;
-    height: 832px;
-    z-index: 1;
+.sten-index{
+    transform: scaleX(-1);
+    margin-left: -10px;
+    width: 400px;
+    margin-top: -50px;
 }
 
 
@@ -169,49 +190,4 @@ p {
 
 /*Vil du med - start*/
 
-
-
-.vildumed-container {
-    position: relative;
-}
-
-/*Vil du med - slut*/
-.vildumed-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensure the background image covers the whole container */
-}
-
-.vildumed-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.character {
-    width: 50%; /* Adjust as needed */
-    transform: scaleX(-1);
-}
-
-.character img {
-    width: 100%;
-    height: auto;
-}
-
-.vildumed-text {
-    width: 50%; /* Adjust as needed */
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-
-
-.vildumed-button {
-    display: inline-block;
-    text-decoration: none;
-}
 /*Vil du med - slut*/
