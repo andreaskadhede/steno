@@ -49,6 +49,7 @@ letter-spacing er vigtig for at få det til at ligne vores mockups
 
 body {
     font-family: "aupassata";
+    overflow: hidden;
 }
 
 h1 {
@@ -207,14 +208,7 @@ p {
     box-sizing: border-box;
 }
 
-.vildumed-text h2 {
-    margin-top: 0;
-}
 
-.vildumed-text p {
-    margin-bottom: 20px;
-    font-family: "aupassata";
-}
 
 .vildumed-button {
     display: inline-block;
