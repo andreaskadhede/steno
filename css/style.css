@@ -30,7 +30,7 @@ Her giver får baggrunden på div'en den fastlagte beige farve.
 /* Anvender @font-face for at kunne bruge en bestemt font */
 @font-face {
     font-family: "phosphate";
-    src: url("/font/phosphate.ttc") format("ttc");
+    src: url("/font/Phosphate-Inline.ttf") format("ttc");
 }
 
 @font-face {
@@ -47,18 +47,19 @@ div {
 letter-spacing er vigtig for at få det til at ligne vores mockups
 */
 
+body {
+    font-family: "aupassata";
+}
+
 h1 {
     font-family: 'phosphate';
+    font-size: 100px;
 }
 
 h2 {
     font-family: "Baloo 2", sans-serif;
 }
 
-p {
-    font-family: "aupassata";
-}
-  
 /* Loader div styles */
 .loader {
     display: flex;
@@ -66,7 +67,7 @@ p {
     width: 100vw;
     justify-content: flex-start;
     align-items: flex-end;
-    background-image: url(/img/baggrund/space_baggrund.png);
+    background-image: url(/img/baggrund/space_baggrund.webp);
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
