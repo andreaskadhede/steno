@@ -17,7 +17,7 @@
     --jorden: #62B264;
     --venus: #DFC69A;
     --merkur: #BFBDC5;
-    --hvid: #F2F2F2
+    --hvid: #F2F2F2;
 }
 /* For at bruge disse farver skrives det således:
 
@@ -185,11 +185,12 @@ body{
     font-size: 30px;
     margin: 4px 2px;
     cursor: pointer;
-    border-radius: 100px; /* Rounded corners */
+    border-radius: 100px; 
     margin-left: 80%;
-    top: -835px;
+    top: -848px;
     z-index: 1; 
     position: relative;
+    border: solid 2px  var(--dark-blue);
 }
 
 .en-button {
@@ -205,9 +206,10 @@ body{
     cursor: pointer;
     border-radius: 100px; /* Rounded corners */
     margin-left: 88%;
-    top: -915px;
+    top: -930px;
     z-index: 1; 
     position: relative;
+    border: solid 2px  var(--dark-blue);
 }
 
 .sten-index{
@@ -215,6 +217,15 @@ body{
     margin-left: -10px;
     width: 400px;
     margin-top: -50px;
+}
+
+.start-knap{
+    width: 200px;
+    top: -30% ;
+    margin-left: 165px;
+    z-index: 1; 
+    position: relative;
+   
 }
 
 
