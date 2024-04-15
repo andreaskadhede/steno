@@ -17,7 +17,6 @@
     --jorden: #62B264;
     --venus: #DFC69A;
     --merkur: #BFBDC5;
-    --hvid: #F2F2F2
 }
 /* For at bruge disse farver skrives det således:
 
@@ -111,35 +110,23 @@ h2 {
     display: none;
 }
 
-body{
-    height: 100vh;
-    
-    overflow: hidden;
+/* Styling af afsted.html start */
+.afsted {
+    display: flex;
 }
 
-/* Index css */
-
-
-
-.h1-index{
-    color: var(--dark-blue);
-   font-size: 120px;
-   font-style: solid;
-    margin-top: -850px;
-   text-align: center;
-   top: -60px;
-   position: relative;
-    z-index: 1; 
-   
+.skyerbaggrunda {
+    position: sticky;
+    width: 1280px;
+    z-index: 0;
 }
 
-.logo-index {
-    position: absolute; 
-    top: 60px; 
-    left: 80px; 
-    width: 80px;
-    transform: translate(-50%, -50%); 
-    z-index: 1; 
+.raketa {
+    position: absolute;
+    height: 615px;
+    right: 190px;
+    bottom: 116px;
+    z-index: 2;
 }
 
 .stenvinkera {
@@ -157,7 +144,7 @@ body{
     justify-content: center;
     align-items: center;
     left: 550px;
-    top: 215px;
+    top: 200px;
 }
 
 .taleboblea {
@@ -175,50 +162,128 @@ body{
     position: absolute;
     height: 832px;
     z-index: 1;
-.da-button {
-    background-color: var(--hvid); 
-    border: none;
-    color: var(--dark-blue);
-    padding: 18px 18px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 30px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 100px; /* Rounded corners */
-    margin-left: 80%;
-    top: -835px;
-    z-index: 1; 
-    position: relative;
+}
+/* Styling af afsted.html slut */
+
+/* Styling af cockpit.html start */
+.spacec {
+position: sticky;
+width: 1280px;
+z-index: 0;
 }
 
-.en-button {
-    background-color: var(--hvid); 
-    border: none;
-    color: var(--dark-blue);
-    padding: 18px 18px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 30px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 100px; /* Rounded corners */
-    margin-left: 88%;
-    top: -915px;
-    z-index: 1; 
-    position: relative;
+.cockpitc {
+    display: flex;
+
 }
 
-.sten-index{
-    transform: scaleX(-1);
-    margin-left: -10px;
-    width: 400px;
-    margin-top: -50px;
+.cockpit {
+    position: sticky;
+    z-index: 2;
 }
 
+.planeter {
+    position: absolute;
+    display: flex;
+    z-index: 1;
+}
+
+.solenpit {
+    height: 700px;
+    width: auto;
+}
+
+.merkurpit {
+    height: 73px;
+    width: auto;
+}
+
+.venuspit {
+    height: 110px;
+    width: auto;
+}
+
+.jordenpit {
+    height: 86px;
+    width: auto;
+}
+
+.marspit {
+    height: 78px;
+    width: auto;
+}
+
+.jupiterpit {
+    height: 232px;
+    width: auto;
+}
+
+.saturnpit {
+    height: 185px;
+    width: auto;
+}
+
+.uranuspit {
+    height: 111px;
+    width: auto;
+}
+
+.neptunpit {
+    height: 88px;
+    width: auto;
+}
+
+/* Styling af cockpit.html slut */
 
 /*Vil du med - start*/
+.vildumed-container {
+    position: relative;
+}
 
+/*Vil du med - slut*/
+.vildumed-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the background image covers the whole container */
+}
+
+.vildumed-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.character {
+    width: 50%; /* Adjust as needed */
+    transform: scaleX(-1);
+}
+
+.character img {
+    width: 100%;
+    height: auto;
+}
+
+.vildumed-text {
+    width: 50%; /* Adjust as needed */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.vildumed-text h2 {
+    margin-top: 0;
+}
+
+.vildumed-text p {
+    margin-bottom: 20px;
+    
+}
+
+.vildumed-button {
+    display: inline-block;
+    text-decoration: none;
+}
 /*Vil du med - slut*/
