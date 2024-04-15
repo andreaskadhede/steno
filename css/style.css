@@ -79,29 +79,26 @@ h2 {
 /* Loader billede styles */
 .loadingrocket {
     width: 20%;
-    margin-left: 100px;
     margin-top: 100px;
+    bottom: -50%;
     position: absolute;
     display: flex;
-    animation: actionAndTilt 3s infinite linear; 
+    animation: flying 3s linear; 
 }
 
 /* Animation defineres */
-@keyframes actionAndTilt {
+@keyframes flying {
     0% {
-        transform: translateY(0) translatex(0px) rotate(0deg);
+        transform: translateY(0) translatex(0px) rotate(15deg);
     }
-    25% {
-        transform: translateY(30px) translatex(20px) rotate(-10deg);
+    33% {
+        transform: translateY(-50vh) translatex(20vw) rotate(57deg);
     }
-    50% {
-        transform: translateY(0px) translatex(0px) rotate(0deg);
-    }
-    75% {
-        transform: translateY(-30px)  translatex(20px) rotate(10deg);
+    66% {
+        transform: translateY(-80vh) translatex(50vw) rotate(50deg);
     }
     100% {
-        transform: translateY(0) translatex(0px) rotate(0deg);
+        transform: translateY(-150vh) translatex(80vw) rotate(10deg);
     }
 }
 
