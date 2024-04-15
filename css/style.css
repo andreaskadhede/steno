@@ -5,6 +5,59 @@
     list-style: none;
     box-sizing: border-box;
 }
+
+/* Anvender :root til at sætte farverne (dette er smart, så man nemt kan ændre alle af den samme farve på siden) */
+:root {
+    --dark-blue: #1E2346;
+    --neptun: #8EACCF;
+    --uranus: #9FDAE3;
+    --saturn: #E4C2AF;
+    --jupiter: #E16F2C;
+    --mars: #D65238;
+    --jorden: #62B264;
+    --venus: #DFC69A;
+    --merkur: #BFBDC5;
+}
+/* For at bruge disse farver skrives det således:
+
+div {
+    background-color:var(--beige);
+}
+Her giver får baggrunden på div'en den fastlagte beige farve.
+*/
+
+
+/* Anvender @font-face for at kunne bruge en bestemt font */
+@font-face {
+    font-family: "phosphate";
+    src: url("/font/phosphate.ttc") format("ttc");
+}
+
+@font-face {
+    font-family: "aupassata";
+    src: url("/font/aupassata_rg.ttf") format("ttf");
+}
+/* For at bruge denne font skrives det således:
+
+div {
+    font-family: 'headerFont';
+    letter-spacing: 2px;
+}
+
+letter-spacing er vigtig for at få det til at ligne vores mockups
+*/
+
+h1 {
+    font-family: 'phosphate';
+}
+
+h2 {
+    font-family: "Baloo 2", sans-serif;
+}
+
+p {
+    font-family: "aupassata";
+}
   
 /* Loader div styles */
 .loader {
@@ -26,6 +79,7 @@
 .loadingrocket {
     width: 20%;
     margin-left: 100px;
+    margin-top: 100px;
     position: absolute;
     display: flex;
     animation: actionAndTilt 3s infinite linear; 
@@ -37,7 +91,7 @@
         transform: translateY(0) translatex(0px) rotate(0deg);
     }
     25% {
-        transform: translateY(-30px) translatex(-20px) rotate(-10deg);
+        transform: translateY(30px) translatex(20px) rotate(-10deg);
     }
     50% {
         transform: translateY(0px) translatex(0px) rotate(0deg);
