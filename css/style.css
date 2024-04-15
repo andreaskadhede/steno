@@ -213,5 +213,7 @@ p {
 .vildumed-button {
     display: inline-block;
     text-decoration: none;
+    width: 300px;
+    margin-left: 150px;
 }
 /*Vil du med - slut*/
