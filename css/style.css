@@ -185,7 +185,7 @@ body{
     font-size: 30px;
     margin: 4px 2px;
     cursor: pointer;
-    border-radius: 100px; /* Rounded corners */
+    border-radius: 100px; 
     margin-left: 80%;
     top: -848px;
     z-index: 1; 
