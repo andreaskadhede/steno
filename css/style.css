@@ -53,13 +53,16 @@ body {
 
 h1 {
     font-family: 'phosphate';
-    font-size: 100px;
 }
 
 h2 {
     font-family: "Baloo 2", sans-serif;
 }
 
+p {
+    font-family: "aupassata";
+}
+  
 /* Loader div styles */
 .loader {
     display: flex;
@@ -115,6 +118,9 @@ h2 {
 
 
 /*Vil du med - start*/
+
+
+
 .vildumed-container {
     position: relative;
 }
@@ -157,7 +163,7 @@ h2 {
 
 .vildumed-text p {
     margin-bottom: 20px;
-    
+    font-family: "aupassata";
 }
 
 .vildumed-button {
