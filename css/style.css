@@ -17,6 +17,7 @@
     --jorden: #62B264;
     --venus: #DFC69A;
     --merkur: #BFBDC5;
+    --hvid: #F2F2F2;
 }
 /* For at bruge disse farver skrives det således:
 
@@ -49,6 +50,7 @@ letter-spacing er vigtig for at få det til at ligne vores mockups
 
 body {
     font-family: "aupassata";
+    overflow: hidden;
 }
 
 h1 {
@@ -79,29 +81,26 @@ h2 {
 /* Loader billede styles */
 .loadingrocket {
     width: 20%;
-    margin-left: 100px;
     margin-top: 100px;
+    bottom: -50%;
     position: absolute;
     display: flex;
-    animation: actionAndTilt 3s infinite linear; 
+    animation: flying 3s linear; 
 }
 
 /* Animation defineres */
-@keyframes actionAndTilt {
+@keyframes flying {
     0% {
-        transform: translateY(0) translatex(0px) rotate(0deg);
+        transform: translateY(0) translatex(0px) rotate(15deg);
     }
-    25% {
-        transform: translateY(30px) translatex(20px) rotate(-10deg);
+    33% {
+        transform: translateY(-50vh) translatex(20vw) rotate(57deg);
     }
-    50% {
-        transform: translateY(0px) translatex(0px) rotate(0deg);
-    }
-    75% {
-        transform: translateY(-30px)  translatex(20px) rotate(10deg);
+    66% {
+        transform: translateY(-80vh) translatex(50vw) rotate(50deg);
     }
     100% {
-        transform: translateY(0) translatex(0px) rotate(0deg);
+        transform: translateY(-150vh) translatex(80vw) rotate(10deg);
     }
 }
 
@@ -109,6 +108,56 @@ h2 {
 .hidden {
     display: none;
 }
+
+/* Index styling */
+.da-button {
+    background-color: var(--hvid); 
+    border: none;
+    color: var(--dark-blue);
+    padding: 18px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 100px; 
+    margin-left: 80%;
+    top: -848px;
+    z-index: 1; 
+    position: relative;
+    border: solid 2px  var(--dark-blue);
+}
+
+.en-button {
+    background-color: var(--hvid); 
+    border: none;
+    color: var(--dark-blue);
+    padding: 18px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 100px; /* Rounded corners */
+    margin-left: 88%;
+    top: -930px;
+    z-index: 1; 
+    position: relative;
+    border: solid 2px  var(--dark-blue);
+}
+
+.start-knap{
+    width: 200px;
+    top: -30% ;
+    margin-left: 165px;
+    z-index: 1; 
+    position: relative;
+   
+}
+
+/* Index style slut */
 
 /* Styling af afsted.html start */
 .afsted {
@@ -240,6 +289,68 @@ z-index: 0;
     position: relative;
 }
 
+
+
+.vildumed-container {
+    position: relative;
+}
+
+/*Vil du med - slut*/
+.vildumed-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the background image covers the whole container */
+}
+
+.vildumed-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.character {
+    width: 50%; /* Adjust as needed */
+    transform: scaleX(-1);
+}
+
+.character img {
+    width: 100%;
+    height: auto;
+}
+
+.vildumed-text {
+    width: 50%; /* Adjust as needed */
+    padding: 20px;
+    box-sizing: border-box;
+    padding-right: 220px;
+    color: #1E2346;
+}
+
+.vildumed-text h2{
+    font-size: 80px;
+    text-align: center;
+}
+
+.vildumed-text p{
+font-family: au passata;
+font-size: 35px;
+text-align: center;
+}
+
+
+
+.vildumed-button {
+    display: inline-block;
+    align-items: center;
+    text-decoration: none;
+    width: 230px;
+    margin-left: 190px;
+    margin-bottom: 50px;
+}
 /*Vil du med - slut*/
 .vildumed-container img {
     width: 100%;
