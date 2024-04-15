@@ -257,14 +257,29 @@ body{
     width: 50%; /* Adjust as needed */
     padding: 20px;
     box-sizing: border-box;
+    padding-right: 220px;
+    color: #1E2346;
+}
+
+.vildumed-text h2{
+    font-size: 80px;
+    text-align: center;
+}
+
+.vildumed-text p{
+font-family: au passata;
+font-size: 35px;
+text-align: center;
 }
 
 
 
 .vildumed-button {
     display: inline-block;
+    align-items: center;
     text-decoration: none;
-    width: 300px;
-    margin-left: 150px;
+    width: 230px;
+    margin-left: 190px;
+    margin-bottom: 50px;
 }
 /*Vil du med - slut*/
