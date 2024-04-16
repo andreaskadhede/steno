@@ -906,6 +906,66 @@ width: 75%;
     left: 0;
 }
 
+/************************************************** VENUS **************************************************/
+
+.venus {
+    position: absolute;
+    width: 1000px;
+    top: 40%;
+    left: 35%;
+    z-index: 1;
+}
+
+.tekst-venstre .venus_h1 {
+    color: var(--venus);
+}
+
+.tekst-venstre .venus_p {
+    font-size: 40px;
+    color: var(--venus);
+    padding: 0 50px;
+}
+
+.taleboble-venus {
+    width: 270px;
+    z-index: 3;
+    position: absolute;
+    top: 1%;
+    left: 72%;
+    text-align: center;
+    
+}
+
+.taleboble-venus img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(5deg);
+}
+
+.taleboble-venus-tekst {
+    width: 75%;
+    margin: 0 12.5%;
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
+
+#sten_sveder {
+    width: 320px;
+    z-index: 2;
+    position: absolute;
+    top: 10%;
+    left: 55%;
+}
+
+#skyer_venus {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+
 /************************************************** SATURN **************************************************/
 
 .saturn {
