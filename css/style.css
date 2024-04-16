@@ -530,11 +530,11 @@ h2 {
 }
 
 .taleboble-jorden {
-    width: 250px;
+    width: 300px;
     z-index: 3;
     position: absolute;
     top: 5%;
-    left: 15%;
+    left: 13%;
     text-align: center;
     
 }
@@ -564,7 +564,14 @@ h2 {
     left: 20%; 
 }
 
+.taleboble-jorden-tekst {
+    width: 80%;
+    margin: 0 5%;
+    position: absolute;
+    top: 35px;
+    left:5%;
 
+}
 
 /************************************************** URANUS **************************************************/
 
