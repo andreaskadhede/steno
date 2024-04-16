@@ -356,7 +356,7 @@ h2 {
     position: absolute;
     height: 88px;
     width: auto;
-    top: 22rem;
+    top: 20rem;
     left: 70rem;
 }
 
@@ -368,15 +368,20 @@ h2 {
     z-index: 4;
 }
 
-.boblec {
+.tale_boble {
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    left: 25%;
-    top: 10%;
-    width: 213px;
-    z-index: 4;
+    left: 27%;
+    top: 37%;
+    width: 12rem;
+    z-index: 5;
+}
+
+.tekst_boble {
+    position: absolute;
+    text-align: center;
+    left: 27%;
+    top: 37%;
+    z-index: 6;
 }
 /* Styling af cockpit.html slut */
 
@@ -855,9 +860,6 @@ body{
 }
 
 /* Index css */
-
-
-
 .h1-index{
     color: var(--dark-blue);
    font-size: 120px;
@@ -879,40 +881,6 @@ body{
     z-index: 1; 
 }
 
-.stenvinkera {
-    position: absolute;
-    height: 435px;
-    left: 117px;
-    bottom: 96px;
-    transform: scaleX(-1);
-    z-index: 2;
-}
-
-.boblea {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    left: 550px;
-    top: 215px;
-}
-
-.taleboblea {
-    position: absolute;
-    height: 324px;
-    z-index: 2;
-}
-
-.pa {
-    position: absolute;
-    z-index: 3;
-}
-
-.landa {
-    position: absolute;
-    height: 832px;
-    z-index: 1;
-}
 .da-button {
     background-color: var(--hvid); 
     border: none;
@@ -967,10 +935,7 @@ body{
    
 }
 
-
 /*Jorden start*/
-
-
 .jorden-container {
     position: relative;
 }
@@ -1041,12 +1006,7 @@ body{
     margin-bottom: 50px;
 }
 /*Jorden slut*/
-
-
 /*Vil du med - start*/
-
-
-
 .vildumed-container {
     position: relative;
 }
@@ -1096,8 +1056,6 @@ font-size: 35px;
 text-align: center;
 }
 
-
-
 .vildumed-button {
     display: inline-block;
     align-items: center;
@@ -1107,8 +1065,43 @@ text-align: center;
     margin-bottom: 50px;
 }
 /*Vil du med - slut*/
+/* Styling af afsted.html start */
+.stenvinker_afsted {
+    position: absolute;
+    height: 435px;
+    left: 117px;
+    bottom: 96px;
+    transform: scaleX(-1);
+    z-index: 2;
+}
 
+.boble_afsted {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 550px;
+    top: 215px;
+}
 
+.taleboble_afsted {
+    position: absolute;
+    height: 324px;
+    z-index: 2;
+}
+
+.p_afsted {
+    position: absolute;
+    z-index: 3;
+}
+
+.land {
+    position: absolute;
+    height: 832px;
+    bottom: 0;
+    z-index: 1;
+}
+/* Styling af afsted.html slut */
 /* Planeter */
 .tilbage-raket {
     transform: rotate(270deg);
