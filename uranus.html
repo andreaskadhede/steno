@@ -6,10 +6,13 @@
     <title>Uranus • Steno</title>
 
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 
     <!-- favicon -->
-    <link rel="icon" href="">
+    <link rel="icon" href="img/logo.webp">
 
     <!-- meta/seo -->
     <meta name="geo.region" content="DK-82">
@@ -23,12 +26,40 @@
 <body>
     <!-- Loading screen -->
     <div id="loader" class="loader">
-    <img class="loadingrocket" src="img/rocket.webp"></img>
+        <img class="loadingrocket" src="img/raket-ild.webp"></img>
     </div>
+
     <div id="content" class="hidden">
+        <div class="main-content" >
+            <a class="tilbage-raket" href="cockpit.html">
+                <img src="img/raket.webp" alt="Raket">
+            </a>
 
-        <!-- Alt kode skrives her! -->
+            <img class="uranus" src="img/planeter/uranus.webp" alt="Uranus">
+            <img id="sten-fryser" src="animationer/sten-fryser.gif" alt="Sten står og fryser">
+            <div class="taleboble-uranus">
+                <img src="img/taleboble.webp" alt="">
+                <div class="taleboble-uranus-tekst">
+                    <h2>Hov!</h2>
+                    <p>Bliver du også helt rundtosset?</p>
+                    <p>Lad os lige se nærmere på, hvorfor ved at trykke på Uranus.</p>
+                </div>
+            </div>
+            
 
+            <div class="tekst-højre">
+                <h1>Uranus</h1>
+                <p>Uranus er den syvende planet fra solen i vores solsystem!</p>
+                <p>Det er den koldeste planet af alle!</p>
+                <p>Derfor kalder vi den 'Is-planeten'.</p>
+            </div>
+
+        </div>
+        <div class="popup-uranus popup hidden" >
+            <p>Uranus drejer rundt i urets retning, som den eneste planet i vores solsystem.</p>
+            <img id="uranus-drejer" src="img/planeter/uranus.webp" alt="Uranus drejer rundt">
+            <img id="kryds" src="img/kryds.orange.webp" alt="Kryds">
+        </div>
     </div>
     <script src="js/script.js"></script>
 </body>
