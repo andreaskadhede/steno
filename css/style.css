@@ -229,6 +229,81 @@ body{
 }
 
 
+/*Jorden start*/
+
+
+.jorden-container {
+    position: relative;
+}
+
+.jorden-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.jorden-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.jorden-character {
+    position: absolute; /* Position absolutely */
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: scaleX(-1);
+    z-index: 2; /* Ensure it's on top of the planet image */
+}
+
+.jorden-character img {
+    width: 50%;
+    height: auto;
+}
+
+.jorden-planet img {
+    position: absolute; /* Position absolutely */
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1; /* Ensure it's below the character image */
+}
+
+.jorden-text {
+    width: 50%; 
+    padding: 20px;
+    box-sizing: border-box;
+    padding-right: 220px;
+    color: #1E2346;
+}
+
+.jorden-text h2 {
+    font-size: 80px;
+    text-align: center;
+}
+
+.jorden-text p {
+    font-family: au passata;
+    font-size: 35px;
+    text-align: center;
+}
+
+.jorden-button {
+    display: inline-block;
+    align-items: center;
+    text-decoration: none;
+    width: 230px;
+    margin-left: 190px;
+    margin-bottom: 50px;
+}
+/*Jorden slut*/
+
+
 /*Vil du med - start*/
 
 
