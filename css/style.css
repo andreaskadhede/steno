@@ -270,39 +270,37 @@ h2 {
 
 /************************************************** COCKPIT **************************************************/
 
-.cockpitc {
+/* .cockpitc {
     display: flex;
     flex-direction: column;
-}
+} */
 
 .cockpittop {
     position: sticky;
     width: 100%;
     top: 0;
+    left: 0;
     z-index: 2;
 }
 
 .cockpitbund {
     position: absolute;
     width: 100%;
-    bottom: -26%;
+    bottom: -10%;
+    left: 0;
     z-index: 2;
 }
 
-.planeter {
-    position: absolute;
-    display: flex;
-    z-index: 1;
-}
 
-.planeter a .solenpit {
+
+.solenpit {
     position: absolute;
     height: 720px;
     width: auto;
     left: -22rem;
 }
 
-.planeter a .merkurpit {
+.merkurpit {
     position: absolute;
     height: 73px;
     width: auto;
@@ -310,7 +308,7 @@ h2 {
     left: 18rem;
 }
 
-.planeter a .venuspit {
+.venuspit {
     position: absolute;
     height: 110px;
     width: auto;
@@ -318,7 +316,7 @@ h2 {
     left: 21rem;
 }
 
-.planeter a .jordenpit {
+.jordenpit {
     position: absolute;
     height: 86px;
     width: auto;
@@ -326,7 +324,7 @@ h2 {
     left: 30rem;
 }
 
-.planeter a .marspit {
+.marspit {
     position: absolute;
     height: 78px;
     width: auto;
@@ -334,7 +332,7 @@ h2 {
     left: 34rem;
 }
 
-.planeter a .jupiterpit {
+.jupiterpit {
     position: absolute;
     height: 232px;
     width: auto;
@@ -342,7 +340,7 @@ h2 {
     left: 40rem;
 }
 
-.planeter a .saturnpit {
+.saturnpit {
     position: absolute;
     height: 180px;
     width: auto;
@@ -350,7 +348,7 @@ h2 {
     left: 53rem;
 }
 
-.planeter a .uranuspit {
+.uranuspit {
     position: absolute;
     height: 111px;
     width: auto;
@@ -358,7 +356,7 @@ h2 {
     left: 65rem;
 }
 
-.planeter a .neptunpit {
+.neptunpit {
     position: absolute;
     height: 88px;
     width: auto;
@@ -585,6 +583,13 @@ width: 80%;
     left: 20%; 
 }
 
+.screen-baggrund {
+    height: 78%;
+    top: 11%;
+    position: absolute;
+    width: 72%;
+    background-color: #1E2346
+}
 
 
 /************************************************** URANUS **************************************************/
@@ -775,21 +780,6 @@ width: 80%;
     left: -15%;
 }
 
-.jupiter-tekst {
-    display: flex;
-    grid-template-columns: 2;
-    flex-direction: column;
-    text-align: center;
-    width: 50%;
-    justify-content: center;
-    align-self: flex-end;
-    right: 10%;
-    top: 30%;
-    position: absolute;
-    color: var(--jupiter);
-}
-
-
 
 .taleboble-jupiter {
     width: 200px;
@@ -958,13 +948,16 @@ width: 75%;
     width: 50%;
     text-wrap: wrap;
     text-align: center;
-    top: 15%;
+    top: 20%;
     left: 5%;
 }
 
 
-#saturn-drejer {
-    height: 95vh;
+#saturnsringe {
+    height: 175%;
+    position: absolute;
+    top: -75%;
+    left: -65%;
 }
 
 /************************************************** VENUS **************************************************/
@@ -987,17 +980,22 @@ width: 75%;
 }
 
 .taleboble-solen{
-    z-index: 4;
-    margin-top: -80%;
-    margin-right: 20%;
-    
+    text-align: center;
+    z-index: 8;
+    margin-top: -90%;
+    margin-left: 40%;
     transform: scaleX(-1);
 }
 
 .taleboble-solen-tekst{
-text-align: center;
-z-index: 7;
-margin-top: -15%;
+    z-index: 4;
+    margin-right: -70%;
+    width: 270px;
+    z-index: 3;
+    top: -30%;
+    left: 33%;
+    text-align: center;
+    
 }
 
 
