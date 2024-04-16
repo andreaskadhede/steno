@@ -277,118 +277,142 @@ h2 {
 
 .cockpittop {
     position: sticky;
-    width: 100%;
+    width: 100vw;
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 3;
 }
 
 .cockpitbund {
     position: absolute;
-    width: 100%;
-    bottom: -10%;
+    width: 100vw;
+    bottom: -15%;
     left: 0;
-    z-index: 2;
+    z-index: 3;
 }
 
-
+.planeter {
+    height: 100vh;
+    width: 100vw;
+}
 
 .solenpit {
     position: absolute;
-    height: 720px;
-    width: auto;
-    left: -22rem;
+    height: 700px;
+    top: 4%;
+    right: 78%;
+    z-index: 1;
+    transform: rotate(80deg);
+}
+
+.solenpitdiv {
+    z-index: 4;
+    width: 700px;
 }
 
 .merkurpit {
     position: absolute;
     height: 73px;
     width: auto;
-    top: 20rem;
-    left: 18rem;
+    top: 38%;
+    left: 20%;
+    z-index: 4;
 }
 
 .venuspit {
     position: absolute;
     height: 110px;
     width: auto;
-    top: 12rem;
-    left: 21rem;
+    top: 21%;
+    left: 27%;
+    z-index: 4;
 }
 
 .jordenpit {
     position: absolute;
     height: 86px;
     width: auto;
-    top: 17rem;
-    left: 30rem;
+    top: 32%;
+    left: 38%;
 }
 
 .marspit {
     position: absolute;
     height: 78px;
     width: auto;
-    top: 10rem;
-    left: 34rem;
+    top: 18%;
+    left: 43%;
+    z-index: 4;
 }
 
 .jupiterpit {
     position: absolute;
     height: 232px;
     width: auto;
-    top: 7rem;
-    left: 40rem;
+    top: 16%;
+    left: 50%;
+    z-index: 4;
 }
 
 .saturnpit {
     position: absolute;
     height: 180px;
     width: auto;
-    top: 15rem;
-    left: 53rem;
+    top: 32%;
+    left: 66%;
+    z-index: 4;
 }
 
 .uranuspit {
     position: absolute;
     height: 111px;
     width: auto;
-    top: 13rem;
-    left: 65rem;
+    top: 23%;
+    left: 80%;
+    z-index: 4;
 }
 
 .neptunpit {
     position: absolute;
     height: 88px;
     width: auto;
-    top: 22rem;
-    left: 70rem;
+    top: 43%;
+    left: 87%;
+    z-index: 4;
 }
 
 .hjemknap {
     position: absolute;
-    width: 140px;
+    height: 25%;
+    width: 20%;
     bottom: 20%;
-    left: 44.5%;
-    z-index: 4;
+    left: 40%;
+    z-index: 5;
 }
 
 .taleboble-cockpit {
-    /* position: absolute; */
-    display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
-    margin-left: 28%;
-    /* top: 1%;  */
-    margin-top: 10%;
-    width: 220px;
-    z-index: 4;
+    width: 200px;
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    left: 27%;
+    text-align: center;
 }
 
-.cockpit-tekst{
-    z-index: 5;
-    margin-left: -28%;
-    margin-top: -13%;
-    text-align: center;
+.taleboble-cockpit img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(10deg);
+}
+
+.cockpit-tekst {
+    width: 90%;
+    margin: 0 5%;
+    position: absolute;
+    top: 35px;
+    left: 0;
 }
 
 /* Styling af cockpit.html slut */
@@ -831,6 +855,11 @@ width: 75%;
     left: 7%; 
 }
 
+#motiongraphic {
+    height: 77.5%;
+    top: 6%;
+    position: absolute;
+}
 /************************************************** MERKUR **************************************************/
 
 
@@ -894,66 +923,6 @@ width: 75%;
     position: absolute;
     top: 0;
     left: 0;
-}
-
-/************************************************** VENUS **************************************************/
-
-.venus {
-    position: absolute;
-    width: 1000px;
-    top: 40%;
-    left: 35%;
-    z-index: 1;
-}
-
-.tekst-venstre .venus_h1 {
-    color: var(--venus);
-}
-
-.tekst-venstre .venus_p {
-    font-size: 40px;
-    color: var(--venus);
-    padding: 0 50px;
-}
-
-.taleboble-venus {
-    width: 270px;
-    z-index: 3;
-    position: absolute;
-    top: 1%;
-    left: 72%;
-    text-align: center;
-    
-}
-
-.taleboble-venus img {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: rotate(5deg);
-}
-
-.taleboble-venus-tekst {
-    width: 75%;
-    margin: 0 12.5%;
-    position: absolute;
-    top: 50px;
-    left: 0;
-}
-
-#sten_sveder {
-    width: 320px;
-    z-index: 2;
-    position: absolute;
-    top: 10%;
-    left: 55%;
-}
-
-#skyer_venus {
-    position: absolute;
-    width: 100%;
-    z-index: 2;
 }
 
 /************************************************** SATURN **************************************************/
@@ -1022,6 +991,53 @@ width: 75%;
 
 /************************************************** VENUS **************************************************/
 
+.venus {
+    position: absolute;
+    width: 1000px;
+    top: 40%;
+    left: 35%;
+    z-index: 1;
+}
+
+.taleboble-venus {
+    width: 270px;
+    z-index: 3;
+    position: absolute;
+    top: 1%;
+    left: 72%;
+    text-align: center;
+    
+}
+
+.taleboble-venus img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(5deg);
+}
+
+.taleboble-venus-tekst {
+    width: 75%;
+    margin: 0 12.5%;
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
+
+#sten_sveder {
+    width: 320px;
+    z-index: 2;
+    position: absolute;
+    top: 10%;
+    left: 55%;
+}
+
+#skyer_venus {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
 /************************************************** KOMET **************************************************/
 
 /************************************************** SOLEN **************************************************/
