@@ -544,7 +544,7 @@ h2 {
 }
 
 .taleboble-jorden {
-    width: 290px;
+    width: 300px;
     z-index: 3;
     position: absolute;
     top: 5%;
@@ -566,7 +566,6 @@ h2 {
     position: absolute;
     top: 0;
     left: 0;
-    color: #1E2346;
 }
 
 .taleboble-jorden-tekst {
@@ -776,7 +775,7 @@ width: 80%;
     left: -15%;
 }
 
-.jupiter-tekst-h {
+.jupiter-tekst {
     display: flex;
     grid-template-columns: 2;
     flex-direction: column;
@@ -784,20 +783,13 @@ width: 80%;
     width: 50%;
     justify-content: center;
     align-self: flex-end;
-    left: 50%;
+    right: 10%;
     top: 30%;
     position: absolute;
     color: var(--jupiter);
 }
 
-.jupiter-tekst h1 {
-}
 
-.jupiter-tekst p {
-    font-size: 40px;
-    color: var(--jorden);
-    padding: 0 15px;
-}
 
 .taleboble-jupiter {
     width: 200px;
