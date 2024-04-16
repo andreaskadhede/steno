@@ -6,10 +6,13 @@
     <title>Merkur • Steno</title>
 
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 
     <!-- favicon -->
-    <link rel="icon" href="">
+    <link rel="icon" href="img/logo.webp">
 
     <!-- meta/seo -->
     <meta name="geo.region" content="DK-82">
@@ -23,12 +26,39 @@
 <body>
     <!-- Loading screen -->
     <div id="loader" class="loader">
-    <img class="loadingrocket" src="img/rocket.webp"></img>
+        <img class="loadingrocket" src="img/raket-ild.webp"></img>
     </div>
+
     <div id="content" class="hidden">
+        <div class="main-content" >
+            <a class="tilbage-raket" href="cockpit.html">
+                <img src="img/raket.webp" alt="Raket">
+            </a>
 
-        <!-- Alt kode skrives her! -->
+            <img class="merkur" src="img/planeter/merkur.webp" alt="Merkur">
+            <img id="sten-staar" src="img/sten-staar.webp" alt="Sten står">
+            <div class="taleboble-merkur">
+                <img src="img/taleboble.webp" alt="">
+                <div class="taleboble-merkur-tekst">
+                    <h2>Hold da op!</h2>
+                    <p>Syntes du også tiden går meget hurtigt her?</p>
+                    <p>Prøv at trykke på min arm for at se på mit ur.</p>
+                </div>
+            </div>
+            
 
+            <div class="tekst-højre">
+                <h1>Merkur</h1>
+                <p>Merkur er den første planet fra solen i vores solsystem! Den ligger tættest på solen og er den mindste planet i solsystemet!</p>
+            </div>
+
+        </div>
+        <div class="popup-merkur popup hidden" >
+            <img id="hurtig-tid" src="animationer/hurtig-tid.gif" alt="Stens armbåndsur, hvor tiden går hurtigt">
+
+            <p> Merkur befinder sig tættest på solen derfor går tiden hurtigere end på Jorden. Et år på Merkur varer kun 88 dage!</p>
+            <img id="kryds" src="img/kryds.orange.webp" alt="Kryds">
+        </div>
     </div>
     <script src="js/script.js"></script>
 </body>

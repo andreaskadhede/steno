@@ -31,7 +31,7 @@ Her giver får baggrunden på div'en den fastlagte beige farve.
 /* Anvender @font-face for at kunne bruge en bestemt font */
 @font-face {
     font-family: "phosphate";
-    src: url("/font/PhosphateInline.woff") format("woff");
+    src: url("/font/phosphate.woff2") format("woff2");
 }
 
 @font-face {
@@ -220,7 +220,7 @@ h2 {
     position: absolute;
     height: 615px;
     right: 190px;
-    bottom: 116px;
+    bottom: 50px;
     z-index: 2;
 }
 
@@ -228,36 +228,42 @@ h2 {
     position: absolute;
     height: 435px;
     left: 117px;
-    bottom: 96px;
+    bottom: 15px;
     transform: scaleX(-1);
     z-index: 2;
 }
 
 
 .boblea {
-    position: absolute;
+   position: absolute;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
     left: 550px;
     top: 200px;
 }
 
 .taleboblea {
-    position: absolute;
-    height: 324px;
+    /* position: absolute; */
+    margin-top: -100px;
+    width: 60%;
+    margin-left: -20%;
     z-index: 2;
 }
 
 .pa {
-    position: absolute;
-    z-index: 3;
+    /* position: absolute; */
+   margin-top: 210px;
+    margin-left: 500px;
+    margin-right: 300px;
+    font-size: 25px;
+    z-index: 4;
 }
 
 .land {
     position: absolute;
     width: 100%;
-    margin-top: -5%;
+    margin-top: -30%;
     z-index: 1;
 }
 /* Styling af afsted.html slut */
@@ -279,7 +285,7 @@ h2 {
 .cockpitbund {
     position: absolute;
     width: 100%;
-    bottom: 0;
+    bottom: -26%;
     z-index: 2;
 }
 
@@ -291,7 +297,7 @@ h2 {
 
 .planeter a .solenpit {
     position: absolute;
-    height: 700px;
+    height: 720px;
     width: auto;
     left: -22rem;
 }
@@ -338,7 +344,7 @@ h2 {
 
 .planeter a .saturnpit {
     position: absolute;
-    height: 185px;
+    height: 180px;
     width: auto;
     top: 15rem;
     left: 53rem;
@@ -363,21 +369,30 @@ h2 {
 .hjemknap {
     position: absolute;
     width: 140px;
-    bottom: 35%;
+    bottom: 20%;
     left: 44.5%;
     z-index: 4;
 }
 
-.boblec {
-    position: absolute;
+.taleboble-cockpit {
+    /* position: absolute; */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    left: 25%;
-    top: 10%;
-    width: 213px;
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin-left: 28%;
+    /* top: 1%;  */
+    margin-top: 10%;
+    width: 220px;
     z-index: 4;
 }
+
+.cockpit-tekst{
+    z-index: 5;
+    margin-left: -28%;
+    margin-top: -13%;
+    text-align: center;
+}
+
 /* Styling af cockpit.html slut */
 
 /************************************************** PLANETER (ALLE) **************************************************/
@@ -408,7 +423,6 @@ h2 {
 
 .tekst-højre {
     display: flex;
-    grid-template-columns: 2;
     flex-direction: column;
     text-align: center;
     width: 50%;
@@ -426,7 +440,7 @@ h2 {
 .tekst-højre p {
     font-size: 40px;
     color: var(--neptun);
-    padding: 0 15px;
+    padding: 0 50px;
 }
 
 .taleboble-neptun {
@@ -530,11 +544,11 @@ h2 {
 }
 
 .taleboble-jorden {
-    width: 250px;
+    width: 290px;
     z-index: 3;
     position: absolute;
     top: 5%;
-    left: 15%;
+    left: 13%;
     text-align: center;
     
 }
@@ -553,6 +567,14 @@ h2 {
     top: 0;
     left: 0;
     color: #1E2346;
+}
+
+.taleboble-jorden-tekst {
+width: 80%;
+    margin: 0 5%;
+    position: absolute;
+    top: 36px;
+    left: 5%;
 }
 
 .sten-jorden {
@@ -647,9 +669,250 @@ h2 {
 
 /************************************************** MARS **************************************************/
 
+.mars {
+    position: absolute;
+    width: 1000px;
+    z-index: 1;
+    top: 23%;
+    left: 43%;
+}
+
+.tekst-venstre {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    justify-content: center;
+    align-self: flex-end;
+    top: 15%;
+    position: absolute;
+}
+
+.tekst-venstre h1 {
+    color: var(--mars);
+}
+
+.tekst-venstre p {
+    font-size: 40px;
+    color: var(--mars);
+    padding: 0 50px;
+}
+
+.taleboble-mars {
+    width: 270px;
+    z-index: 3;
+    position: absolute;
+    top: 1%;
+    left: 72%;
+    text-align: center;
+    
+}
+
+.taleboble-mars img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(5deg);
+}
+
+.taleboble-mars-tekst {
+    width: 75%;
+    margin: 0 12.5%;
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
+
+#sten-staar-mars {
+    width: 320px;
+    z-index: 2;
+    position: absolute;
+    top: 10%;
+    left: 55%;
+}
+
+#rover {
+    width: 400px;
+    transform: scaleX(-1) rotate(20deg);
+    z-index: 2;
+    position: absolute;
+    top: 55%;
+    left: 63%;
+}
+
+.popup-mars {
+    display: flex;
+    justify-content: center;
+}
+
+#infographic {
+    height: 78%;
+    top: 11%;
+    position: absolute;
+}
+
+#ramme {
+    height: 96%;
+    position: absolute;
+    top: 2%;
+}
+
+#kryds-screen {
+    width: 38px;
+    position: absolute;
+    z-index: 5;
+    top: 18vh;
+    left: 82.5vw
+}
+
 /************************************************** JUPITER **************************************************/
 
+.jupiter {
+    position: absolute;
+    width: 1000px;
+    z-index: 1;
+    top: 45%;
+    left: -15%;
+}
+
+.jupiter-tekst-h {
+    display: flex;
+    grid-template-columns: 2;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    justify-content: center;
+    align-self: flex-end;
+    left: 50%;
+    top: 30%;
+    position: absolute;
+    color: var(--jupiter);
+}
+
+.jupiter-tekst h1 {
+}
+
+.jupiter-tekst p {
+    font-size: 40px;
+    color: var(--jorden);
+    padding: 0 15px;
+}
+
+.taleboble-jupiter {
+    width: 200px;
+    z-index: 3;
+    position: absolute;
+    top: 27%;
+    left: 11.5%;
+    text-align: center;
+    
+}
+
+.taleboble-jupiter img {
+    width: 100%;
+    position: absolute;
+    top: 10%;
+    left: 0;
+}
+
+.taleboble-jupiter h2 p {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #1E2346;
+}
+
+.taleboble-jupiter p {
+    font-size: 15px;
+}
+
+.taleboble-jupiter h2 {
+    font-size: 20px;
+}
+
+.taleboble-jupiter-tekst {
+width: 75%;
+    margin: 0 5%;
+    position: absolute;
+    top: 34px;
+    left: 7%;
+}
+
+.sten-jupiter {
+    width: 100px;
+    transform: scaleX(-1);
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 7%; 
+}
+
 /************************************************** MERKUR **************************************************/
+
+
+.merkur {
+    position: absolute;
+    width: 1000px;
+    z-index: 1;
+    top: 50%;
+    left: -5%;
+}
+
+.taleboble-merkur {
+    width: 270px;
+    z-index: 3;
+    position: absolute;
+    top: 5%;
+    left: 33%;
+    text-align: center;
+    
+}
+
+.taleboble-merkur img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(10deg);
+}
+
+.taleboble-merkur-tekst {
+    width: 75%;
+    margin: 0 12.5%;
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
+
+#sten-staar {
+    width: 500px;
+    transform: scaleX(-1);
+    z-index: 2;
+    position: absolute;
+    top: 10%;
+    left: 0;
+}
+
+.popup-merkur p {
+    font-size: 40px;
+    color: var(--hvid);
+    position: absolute;
+    width: 35%;
+    text-wrap: wrap;
+    text-align: center;
+    margin-left: 63%;
+    top: 15%;
+}
+
+
+#hurtig-tid {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
 /************************************************** SATURN **************************************************/
 
@@ -717,6 +980,35 @@ h2 {
 /************************************************** KOMET **************************************************/
 
 /************************************************** SOLEN **************************************************/
+
+.solen{
+    margin-top: -10%;
+    margin-left: -10%;
+}
+
+.sten-staar-solen{
+    z-index: 6;
+    margin-top: -60%;
+    margin-left: 70%;
+    transform: rotate(-20deg);
+    width: 50%;
+}
+
+.taleboble-solen{
+    z-index: 4;
+    margin-top: -80%;
+    margin-right: 20%;
+    
+    transform: scaleX(-1);
+}
+
+.taleboble-solen-tekst{
+text-align: center;
+z-index: 7;
+margin-top: -15%;
+}
+
+
 
 
 /************************************************** SLUT **************************************************/
