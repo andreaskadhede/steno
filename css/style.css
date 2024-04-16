@@ -63,6 +63,7 @@ body {
 h1 {
     font-family: "phosphate";
     font-size: 110px;
+    font-weight: 1;
 }
 
 h2 {
@@ -613,9 +614,23 @@ width: 80%;
     top: 11%;
     position: absolute;
     width: 72%;
-    background-color: #1E2346
+    background-color: #1E2346;
+    z-index: 1;
+    color: var(--hvid);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
+.screen-baggrund h1 {
+    font-size: 150px;
+
+}
+
+.screen-baggrund p {
+    font-size: 60px;
+}
 
 /************************************************** URANUS **************************************************/
 
@@ -785,6 +800,7 @@ width: 80%;
     height: 96%;
     position: absolute;
     top: 2%;
+    z-index: 2;
 }
 
 #kryds-screen {
