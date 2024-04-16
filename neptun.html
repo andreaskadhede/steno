@@ -24,32 +24,41 @@
 </head>
 <body>
     <!-- Loading screen -->
-    <!-- <div id="loader" class="loader">
-    <img class="loadingrocket" src="img/rocket.webp"></img>
+    <div id="loader" class="loader">
+        <img class="loadingrocket" src="img/raket-ild.webp"></img>
     </div>
-    <div id="content" class="hidden"> -->
-        <a class="tilbage-raket" href="cockpit.html">
-            <img src="img/raket.webp" alt="Raket">
-        </a>
 
-        <img class="neptun" src="img/planeter/neptun.webp" alt="Neptun">
-        <img src="animationer/sten-sidder.gif" alt="Sten sidder og vifter emd fødderne">
-        <div class="taleboble-neptun">
-            <img src="img/taleboble.webp" alt="">
-            <h2>Vent!</h2>
-            <p>Jeg synes vinden tager til.</p>
-            <p>Hvorfor mon det?</p>
-            <p>Prøv at trykke på Neptun for at finde ud af hvorfor.</p>
+    <div id="content" class="hidden">
+        <div class="main-content" >
+            <a class="tilbage-raket" href="cockpit.html">
+                <img src="img/raket.webp" alt="Raket">
+            </a>
+
+            <img class="neptun" src="img/planeter/neptun.webp" alt="Neptun">
+            <img id="sten-sidder" src="animationer/sten-sidder.gif" alt="Sten sidder og vifter emd fødderne">
+            <div class="taleboble-neptun">
+                <img src="img/taleboble.webp" alt="">
+                <div class="taleboble-neptun-tekst">
+                    <h2>Vent!</h2>
+                    <p>Jeg synes vinden tager til.</p>
+                    <p>Hvorfor mon det?</p>
+                    <p>Prøv at trykke på Neptun for at finde ud af hvorfor.</p>
+                </div>
+            </div>
+            
+
+            <div class="tekst-højre">
+                <h1>Neptun</h1>
+                <p>Neptun er den ottende og sidste planet fra solen i vores solsystem!</p>
+                <p>Vidste du at Neptun har 14 måner?</p>
+            </div>
+
         </div>
-        <h1>Neptun</h1>
-        <p>Neptun er den ottende og sidste planet fra solen i vores solsystem!</p>
-        <p>Vidste du at Neptun har 14 måner?</p>
-
-        <div class="popup">
+        <div class="popup-neptun popup hidden" >
             <p>På Neptun er der meget voldsomme vindstød der hedder 'Supersoniske vinde'.</p>
             <img src="img/planeter/neptun.webp" alt="Neptun">
-            <img src="animationer/sten-blæser.gif" alt="Sten står med en paraply og bliver blæst bagover">
-            <img src="img/kryds.orange.webp" alt="Kryds">
+            <img id="sten-blæser" src="animationer/sten-blaeser.gif" alt="Sten står med en paraply og bliver blæst bagover">
+            <img id="kryds" src="img/kryds.orange.webp" alt="Kryds">
         </div>
     </div>
     <script src="js/script.js"></script>
