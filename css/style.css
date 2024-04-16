@@ -81,13 +81,12 @@ h2 {
 }
 
 .h1-index{
-    color: var(--dark-blue);
     font-size: 120px;
     text-align: center;
     position: absolute;
     z-index: 1;
     width: 100%;
-    top: 30vh;
+    top: 20vh;
 }
 
 .logo{
@@ -108,25 +107,20 @@ h2 {
 .da-button, .en-button {
     background-color: var(--hvid);
     color: var(--dark-blue);
-    display: block;
     cursor: pointer;
     border-radius: 100px;
     width: 80px;
     height: 80px;
-    display: inline;
+    line-height: 80px;
     z-index: 1;
-    position: relative;
     border: solid 2px  var(--dark-blue);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
     margin: 15px 10px;
     
 }
 
 .da-button h1, .en-button h1 {
-    font-size: 30px;
-    padding-top: 15px;
+    font-size: 35px;
 }
 
 .sten-index{
@@ -134,6 +128,7 @@ h2 {
     transform: scaleX(-1);
     width: 400px;
     bottom: -10%;
+    left: 5%;
 }
 
 .start-knap{
@@ -142,73 +137,49 @@ h2 {
     left: 42vw;
     z-index: 1;
     position: absolute;
-
 }
-/* Index css slut*/
+
 
 
 /************************************************** VIL DU MED **************************************************/
 
 .vildumed-container {
-    position: relative;
     display: flex;
+    height: 100vh;
 }
 
 .vildumed-container img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.vildumed-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
 }
 
 .character {
     width: 50%;
     transform: scaleX(-1);
-
-}
-
-.character img {
-    width: 100%;
 }
 
 .vildumed-text {
-    color: #1E2346;
     width: 40%;
     margin-right: 10%;
-    box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
 }
 
 .vildumed-text h2{
     font-size: 80px;
-    text-align: center;
+    
 }
 
 .vildumed-text p{
     font-size: 35px;
-    text-align: center;
-    padding: 20px;
-
+    padding: 0 20px;
 }
 
 .vildumed-button {
-    display: inline-block;
     align-items: center;
-    text-decoration: none;
-    width: 230px;
-    margin-bottom: 50px;
+    width: 200px;
 }
 /*Vil du med - slut*/
 
@@ -221,51 +192,50 @@ h2 {
 .raketa {
     position: absolute;
     height: 615px;
-    right: 190px;
-    bottom: 50px;
+    right: 15%;
+    bottom: 7%;
     z-index: 2;
 }
 
 .stenvinkera {
     position: absolute;
     height: 435px;
-    left: 117px;
-    bottom: 15px;
+    left: 10%;
+    bottom: 5%;
     transform: scaleX(-1);
     z-index: 2;
 }
 
 
 .boblea {
-   position: absolute;
-    display: flex;
-    /* justify-content: center;
-    align-items: center; */
-    left: 550px;
-    top: 200px;
+    width: 250px;
+    z-index: 3;
+    position: absolute;
+    top: 18%;
+    left: 32%;
+    text-align: center;
 }
 
-.taleboblea {
-    /* position: absolute; */
-    margin-top: -100px;
-    width: 60%;
-    margin-left: -20%;
-    z-index: 2;
+.boblea img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .pa {
-    /* position: absolute; */
-   margin-top: 210px;
-    margin-left: 500px;
-    margin-right: 300px;
     font-size: 25px;
-    z-index: 4;
+    width: 80%;
+    margin: 0 10%;
+    position: absolute;
+    top: 75px;
+    left: 0;
 }
 
 .land {
     position: absolute;
     width: 100%;
-    margin-top: -30%;
+    bottom: 0;
     z-index: 1;
 }
 /* Styling af afsted.html slut */
@@ -1055,56 +1025,90 @@ width: 75%;
     z-index: 2;
 }
 /************************************************** KOMET **************************************************/
-/* .komet {
-    width: 20%;
-    margin-top: 100px;
-    position: fixed;
-    display: flex;
-    animation: flying 3s linear;
+.komet {
+    width: 30%;
+    position: absolute;
+    top: -20%;
+    right: -30%;
+    animation: komet 2s linear;
 }
 
 /* Animation defineres */
-/* @keyframes flying {
+@keyframes komet {
     0% {
-        transform: translate(0, 0) rotate(15deg);
+        transform: translate(0, 0) rotate(20deg);
     }
     100% {
-        transform: translate(calc(-100vw + 100%), calc(100vh - 100%)) rotate(15deg);
+        transform: translate(calc(-180vw + 100%), calc(120vh - 100%)) rotate(20deg);
     }
-} */
+}
+
+.taleboble-komet {
+    width: 250px;
+    z-index: 3;
+    position: absolute;
+    top: 55%;
+    left: 30%;
+    text-align: center;
+}
+
+.taleboble-komet img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(15deg);
+}
+
+.komet-tekst {
+    width: 80%;
+    margin: 0 10%;
+    position: absolute;
+    top: 35px;
+    left: 0;
+}
 
 /************************************************** SOLEN **************************************************/
 
-.solen{
-    margin-top: -10%;
-    margin-left: -10%;
+.solen {
+    position: absolute;
+    top: -15%;
+    height: 130%;
+    left: -12%;
 }
 
-.sten-staar-solen{
-    z-index: 6;
-    margin-top: -60%;
-    margin-left: 70%;
+.sten-staar-solen {
+    position: absolute;
+    top: 20%;
+    left: 60%;
     transform: rotate(-20deg);
-    width: 50%;
+    width: 760px;
 }
 
-.taleboble-solen{
+.taleboble-solen {
+    width: 500px;
+    z-index: 3;
+    position: absolute;
+    top: 0%;
+    left: 33%;
     text-align: center;
-    z-index: 8;
-    margin-top: -90%;
-    margin-left: 40%;
+}
+
+.taleboble-solen img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
     transform: scaleX(-1);
 }
 
-.taleboble-solen-tekst{
-    z-index: 4;
-    margin-right: -70%;
-    width: 270px;
-    z-index: 3;
-    top: -30%;
-    left: 33%;
-    text-align: center;
-    
+.taleboble-solen-tekst {
+    width: 80%;
+    margin: 0 10%;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    font-size: 30px;
 }
 
 
@@ -1113,75 +1117,48 @@ width: 75%;
 /************************************************** SLUT **************************************************/
 
 
-.slut-raket{
-        position: absolute;
-        width: 30%;
-        right: 15%;
-        bottom: -10%;
-        z-index: 2;
-}
-
-.slut-sten{
-    position: absolute;
-    width: 25%;
-    right: 60%;
-    bottom: -10%;
-    z-index: 2;
-    transform: scaleX(-1);
-}
-
 .slut-taleboble{
+    width: 370px;
+    z-index: 3;
     position: absolute;
-    width: 24%;
-    top: 15%;
-    right: 40%;
-    bottom: -25%;
-    z-index: 2;
+    top: 8%;
+    left: 32%;
+    text-align: center;
+}
+
+.slut-taleboble img{
+    width: 100%;
+}
+
+.slut-taleboble p {
+    font-size: 24px;
+}
+
+.slut-taleboble-tekst {
+    width: 80%;
+    margin: 0 10%;
+    position: absolute;
+    top: 65px;
+    left: 0;
 }
 
 .spil-igen{
     background-color: var(--hvid);
     color: var(--dark-blue);
-    padding: 18px 30px;
+    padding: 18px;
     font-size: 25px;
-    margin: 4px 2px;
+    line-height: 30px;
     cursor: pointer;
     border-radius: 100px;
-    width: 8%;
-    height: 15%;
-    margin-left:-2%;
+    width: 100px;
+    height: 100px;
     border: solid 2px  var(--dark-blue);
     position: absolute;
-    bottom: -25%;
-    left: 5%;
+    bottom: 4%;
+    left: 2.5%;
     z-index: 2;
-   top: 90%;
-}
-
-.slut-h2{
-    color: var(--dark-blue);
-    position: absolute;
-    color: var(--dark-blue);
-    font-size: 40px;
-    margin-left: 40%;
-    margin-top: 12%;
-    z-index: 3;
-}
-
-.slut-p{
-    color: var(--dark-blue);
-    position: absolute;
-    font-size: 20px;
-    margin-right: 45%;
-    margin-left: 42%;
-    margin-top: 16%;
-    z-index: 3;
     text-align: center;
-  
 }
-
-
-
 
 
 /************************************************** LOADINGSCREEN **************************************************/
