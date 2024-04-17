@@ -37,3 +37,4 @@ document.addEventListener("DOMContentLoaded", function() {
     setInterval(fetchWorldPopulation, 600);
 
 });
+

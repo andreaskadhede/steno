@@ -3,13 +3,15 @@
 document.addEventListener("DOMContentLoaded", function() {
 
     const planet = document.getElementById("planet");
+    planet.style.cursor ="pointer";
 
 
     const mainContent = document.getElementById("main-content");
     const popUp = document.getElementById("popup");
     
     const kryds = document.getElementById('kryds');
-    
+    kryds.style.cursor ="pointer";
+
     kryds.addEventListener("click", function() {
         close();
     });
@@ -21,7 +23,6 @@ document.addEventListener("DOMContentLoaded", function() {
     function popup() {
         mainContent.classList.add('hidden');
         popUp.classList.remove('hidden');
-        planet.style.cursor("pointer");
     };
 
     function close() {
