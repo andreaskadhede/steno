@@ -1,6 +1,6 @@
 "use strict"
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function() {
     // Simulate an API request or any async operation
     setTimeout(() => {
         hideLoader();

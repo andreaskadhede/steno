@@ -23,15 +23,13 @@
     <meta name="description" content="">
 
 </head>
-<body>
-    <!-- Loading screen -->
-    <!-- <div id="loader" class="loader">
-    <img class="loadingrocket" src="img/rocket.webp"></img>
-    </div>
-    <div id="content" class="hidden"> -->
+    <body>
+        <!-- Loading screen -->
+        <div id="loader" class="loader">
+            <img class="loadingrocket" src="img/raket-ild.webp"></img>
+        </div>
 
-        <!-- Alt kode skrives her! -->
-        <div class="main-content" >
+        <div id="content" class="hidden">
             <a class="tilbage-raket" href="cockpit.html">
                 <img src="img/raket.webp" alt="Raket">
             </a>
@@ -49,19 +47,22 @@
             </div>
             
 
-            <div class="tekst-venstre">
+            <div class="tekst-venstre" id="tekst-venus">
                 <h1>Venus</h1>
                 <p>Venus er den anden planet fra solen i vores solsystem!</p>
                 <p>Det er den varmeste planet ud af alle!</p>
             </div>
 
             <img id="skyer-venus" src="img/skyer.webp" alt="Venus skyer">
-            <div>
-                <p>Vidste du, at Venus er den anden mest skinnende object i vores solsystem?</p>
+            <div id="tekst-under-skyer" class="hidden">
+                <p>Vidste du, at Venus er det andet mest skinnende objekt i vores solsystem?</p>
                 <p>Det er skyerne, der reflekterer lyset fra solen.</p>
             </div>
-        </div> 
-    </div>
-    <script src="js/loader.js"></script>
-</body>
+        </div>
+        <script src="js/loader.js"></script>
+        <script src="js/skyer.js"></script>
+        <script src="js/inactive.js"></script>
+
+
+    </body>
 </html>

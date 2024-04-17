@@ -23,45 +23,49 @@
     <meta name="description" content="">
 
 </head>
-<body>
-    <!-- Loading screen -->
-    <!-- <div id="loader" class="loader">
-        <img class="loadingrocket" src="img/raket-ild.webp"></img>
-    </div>
+    <body>
+        <!-- Loading screen -->
+        <div id="loader" class="loader">
+            <img class="loadingrocket" src="img/raket-ild.webp"></img>
+        </div>
 
-    <div id="content" class="hidden"> -->
-        <div class="main-content" >
-            <a class="tilbage-raket" href="cockpit.html">
-                <img src="img/raket.webp" alt="Raket">
-            </a>
+        <div id="content" class="hidden">
+            <div id="main-content">
+                <a class="tilbage-raket" href="cockpit.html">
+                    <img src="img/raket.webp" alt="Raket">
+                </a>
 
-            <img class="saturn" src="img/planeter/saturn.webp" alt="Saturn">
-            <img id="sten-flyver" src="animationer/sten-flyver.gif" alt="Sten hænger i Saturnsringe">
-            <div class="taleboble-saturn">
-                <img src="img/taleboble.webp" alt="">
-                <div class="taleboble-saturn-tekst">
-                    <h2>Hmm?</h2>
-                    <p>Jeg må hellere holde godt fast!</p>
-                    <p>Gad vide, hvad Saturns ringe er lavet af?</p>
-                    <p>Prøv at trykke på ringene for at se.</p>
+                <img class="saturn" id="planet" src="img/planeter/saturn.webp" alt="Saturn">
+                <img id="sten-flyver" src="animationer/sten-flyver.gif" alt="Sten hænger i Saturnsringe">
+                <div class="taleboble-saturn">
+                    <img src="img/taleboble.webp" alt="">
+                    <div class="taleboble-saturn-tekst">
+                        <h2>Hmm?</h2>
+                        <p>Jeg må hellere holde godt fast!</p>
+                        <p>Gad vide, hvad Saturns ringe er lavet af?</p>
+                        <p>Prøv at trykke på ringene for at se.</p>
 
+                    </div>
                 </div>
-            </div>
-            
+                
 
-            <div class="tekst-højre">
-                <h1>Saturn</h1>
-                <p>Saturn er den sjette planet fra solen i vores solsystem!</p>
-                <p>Vidste du godt at man ikke kan stå på Saturn, fordi det er en gas planet?</p>
-            </div>
+                <div class="tekst-højre" id="tekst-saturn">
+                    <h1>Saturn</h1>
+                    <p>Saturn er den sjette planet fra solen i vores solsystem!</p>
+                    <p>Vidste du godt at man ikke kan stå på Saturn, fordi det er en gas planet?</p>
+                </div>
 
+            </div>
+            <div class="popup-saturn hidden" id="popup">
+                <p>Saturns ringe er tynde skiver dannet af små is- og stenklumper.</p>
+                <img id="saturnsringe" src="animationer/ring.gif" alt="Saturnsringe tæt på">
+                <img id="kryds" class="kryds" src="img/kryds.orange.webp" alt="Kryds">
+            </div>
         </div>
-        <div class="popup-saturn popup hidden" >
-            <p>Saturns ringe er tynde skiver dannet af små is- og stenklumper.</p>
-            <img id="saturnsringe" src="animationer/ring.gif" alt="Saturnsringe tæt på">
-            <img id="kryds" src="img/kryds.orange.webp" alt="Kryds">
-        </div>
-    </div>
-    <script src="js/loader.js"></script>
-</body>
+        <script src="js/loader.js"></script>
+        <script src="js/popup.js"></script>
+        <script src="js/inactive.js"></script>
+
+
+    </body>
 </html>

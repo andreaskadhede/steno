@@ -58,6 +58,8 @@ body {
     color: var(--dark-blue);
     height: 100vh;
     width: 100vw;
+    font-size: 20px;
+    text-align: center;
 }
 
 h1 {
@@ -68,7 +70,8 @@ h1 {
 
 h2 {
     font-family: "Baloo 2", sans-serif;
-    font-size: 38px;
+    font-size: 40px;
+    line-height: 50px;
 }
 
 
@@ -81,8 +84,7 @@ h2 {
 }
 
 .h1-index{
-    font-size: 120px;
-    text-align: center;
+    font-size: 130px;
     position: absolute;
     z-index: 1;
     width: 100%;
@@ -114,9 +116,7 @@ h2 {
     line-height: 80px;
     z-index: 1;
     border: solid 2px  var(--dark-blue);
-    text-align: center;
-    margin: 15px 10px;
-    
+    margin: 15px 10px;   
 }
 
 .da-button h1, .en-button h1 {
@@ -144,7 +144,6 @@ h2 {
 /************************************************** VIL DU MED **************************************************/
 
 .vildumed-container {
-    display: flex;
     height: 100vh;
 }
 
@@ -153,28 +152,40 @@ h2 {
 }
 
 .character {
+    position: absolute;
     width: 50%;
     transform: scaleX(-1);
+    left: 0;
+    top: 0;
 }
 
+.character img {
+    width: 110%;
+}
+
+
 .vildumed-text {
-    width: 40%;
-    margin-right: 10%;
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+    margin-right: 5%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    text-align: center;
+    gap: 10px;
+    right: 0;
+    top: 0;
 }
 
 .vildumed-text h2{
     font-size: 80px;
-    
+    line-height: 100px;
+    margin-top: 80px;
 }
 
 .vildumed-text p{
     font-size: 35px;
-    padding: 0 20px;
 }
 
 .vildumed-button {
@@ -213,7 +224,6 @@ h2 {
     position: absolute;
     top: 18%;
     left: 32%;
-    text-align: center;
 }
 
 .boblea img {
@@ -235,17 +245,13 @@ h2 {
 .land {
     position: absolute;
     width: 100%;
+    left: 0;
     bottom: 0;
     z-index: 1;
 }
-/* Styling af afsted.html slut */
 
 /************************************************** COCKPIT **************************************************/
 
-/* .cockpitc {
-    display: flex;
-    flex-direction: column;
-} */
 
 .cockpittop {
     position: sticky;
@@ -363,12 +369,11 @@ h2 {
 }
 
 .taleboble-cockpit {
-    width: 200px;
+    width: 210px;
     z-index: 3;
     position: absolute;
     top: 50%;
     left: 27%;
-    text-align: center;
 }
 
 .taleboble-cockpit img {
@@ -380,10 +385,10 @@ h2 {
 }
 
 .cockpit-tekst {
-    width: 90%;
-    margin: 0 5%;
+    width: 80%;
+    margin: 0 10%;
     position: absolute;
-    top: 35px;
+    top: 40px;
     left: 0;
 }
 
@@ -409,41 +414,35 @@ h2 {
 
 .neptun {
     position: absolute;
-    width: 1000px;
+    width: 1200px;
     z-index: 1;
-    top: 45%;
-    left: -15%;
+    top: 40%;
+    left: -20%;
 }
 
 .tekst-højre {
     display: flex;
     flex-direction: column;
-    text-align: center;
     width: 50%;
     justify-content: center;
     align-self: flex-end;
     left: 50%;
     top: 10%;
     position: absolute;
-}
-
-.tekst-højre h1 {
     color: var(--neptun);
 }
 
 .tekst-højre p {
     font-size: 40px;
-    color: var(--neptun);
     padding: 0 50px;
 }
 
 .taleboble-neptun {
-    width: 250px;
+    width: 290px;
     z-index: 3;
     position: absolute;
-    top: 10%;
-    left: 34%;
-    text-align: center;
+    top: 5%;
+    left: 31%;
 }
 
 .taleboble-neptun img {
@@ -451,11 +450,12 @@ h2 {
     position: absolute;
     top: 0;
     left: 0;
+    transform: rotate(5deg);
 }
 
 .taleboble-neptun-tekst {
-    width: 90%;
-    margin: 0 5%;
+    width: 80%;
+    margin: 0 10%;
     position: absolute;
     top: 45px;
     left: 0;
@@ -466,8 +466,8 @@ h2 {
     transform: scaleX(-1);
     z-index: 2;
     position: absolute;
-    top: 30%;
-    left: 20%;
+    top: 28%;
+    left: 18%;
 }
 
 .popup-neptun p {
@@ -476,15 +476,17 @@ h2 {
     position: absolute;
     width: 40%;
     text-wrap: wrap;
-    text-align: center;
+    
     margin-left: 5%;
     top: 25%;
 }
-.popup-neptun img {
+
+.popup-neptun .neptun {
     width: 85%;
     position: absolute;
     top: 37%;
     left: 30%;
+    z-index: 1;
 }
 
 #sten-blæser {
@@ -492,9 +494,10 @@ h2 {
     position: absolute;
     top: 25%;
     left: 45%;
+    z-index: 2;
 }
 
-#kryds {
+.kryds {
     width: 38px;
     position: absolute;
     z-index: 5;
@@ -508,42 +511,23 @@ h2 {
 
 .jorden {
     position: absolute;
-    width: 1000px;
+    width: 800px;
     z-index: 1;
-    top: 45%;
-    left: -15%;
+    top: 35%;
+    left: -5%;
+
 }
 
-.jorden-tekst {
-    display: flex;
-    grid-template-columns: 2;
-    flex-direction: column;
-    text-align: center;
-    width: 50%;
-    justify-content: center;
-    align-self: flex-end;
-    left: 50%;
-    top: 30%;
-    position: absolute;
-}
-
-.jorden-tekst h1 {
+#tekst-jorden {
     color: var(--jorden);
-}
-
-.jorden-tekst p {
-    font-size: 40px;
-    color: var(--jorden);
-    padding: 0 15px;
 }
 
 .taleboble-jorden {
-    width: 300px;
+    width: 325px;
     z-index: 3;
     position: absolute;
     top: 5%;
     left: 13%;
-    text-align: center;
     
 }
 
@@ -555,19 +539,11 @@ h2 {
     transform: scaleX(-1);
 }
 
-.taleboble-jorden h2 p {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
 .taleboble-jorden-tekst {
-width: 80%;
-    margin: 0 5%;
+    width: 80%;
+    margin: 0 10%;
     position: absolute;
-    top: 36px;
-    left: 5%;
+    top: 45px;
 }
 
 .sten-jorden {
@@ -575,8 +551,8 @@ width: 80%;
     transform: scaleX(-1);
     z-index: 2;
     position: absolute;
-    top: 30%;
-    left: 20%; 
+    top: 35%;
+    left: 25%; 
 }
 
 .screen-baggrund {
@@ -584,7 +560,7 @@ width: 80%;
     top: 11%;
     position: absolute;
     width: 72%;
-    background-color: #1E2346;
+    background-color: var(--dark-blue);
     z-index: 1;
     color: var(--hvid);
     display: flex;
@@ -612,13 +588,15 @@ width: 80%;
     left: -15%;
 }
 
+#tekst-uranus {
+    color: var(--uranus);
+}
+
 .taleboble-uranus {
-    width: 250px;
+    width: 290px;
     z-index: 3;
     position: absolute;
-    top: 8%;
-    left: 36%;
-    text-align: center;
+    left: 33%;
 }
 
 .taleboble-uranus img {
@@ -629,10 +607,10 @@ width: 80%;
 }
 
 .taleboble-uranus-tekst {
-    width: 90%;
-    margin: 0 5%;
+    width: 80%;
+    margin: 0 10%;
     position: absolute;
-    top: 45px;
+    top: 40px;
     left: 0;
 }
 
@@ -658,7 +636,7 @@ width: 80%;
     position: absolute;
     width: 40%;
     text-wrap: wrap;
-    text-align: center;
+    
     z-index: 3;
 }
 
@@ -694,21 +672,16 @@ width: 80%;
 .tekst-venstre {
     display: flex;
     flex-direction: column;
-    text-align: center;
     width: 50%;
     justify-content: center;
     align-self: flex-end;
     top: 15%;
     position: absolute;
-}
-
-.tekst-venstre h1 {
     color: var(--mars);
 }
 
 .tekst-venstre p {
     font-size: 40px;
-    color: var(--mars);
     padding: 0 50px;
 }
 
@@ -718,8 +691,6 @@ width: 80%;
     position: absolute;
     top: 1%;
     left: 72%;
-    text-align: center;
-    
 }
 
 .taleboble-mars img {
@@ -746,7 +717,7 @@ width: 80%;
     left: 55%;
 }
 
-#rover {
+.rover {
     width: 400px;
     transform: scaleX(-1) rotate(20deg);
     z-index: 2;
@@ -773,7 +744,7 @@ width: 80%;
     z-index: 2;
 }
 
-#kryds-screen {
+.kryds-screen {
     width: 38px;
     position: absolute;
     z-index: 5;
@@ -791,15 +762,16 @@ width: 80%;
     left: -15%;
 }
 
+#tekst-jupiter {
+    color: var(--jupiter);
+}
 
 .taleboble-jupiter {
-    width: 200px;
+    width: 280px;
     z-index: 3;
     position: absolute;
-    top: 27%;
-    left: 11.5%;
-    text-align: center;
-    
+    top: 23%;
+    left: 13%;
 }
 
 .taleboble-jupiter img {
@@ -807,30 +779,14 @@ width: 80%;
     position: absolute;
     top: 10%;
     left: 0;
-}
-
-.taleboble-jupiter h2 p {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: #1E2346;
-}
-
-.taleboble-jupiter p {
-    font-size: 15px;
-}
-
-.taleboble-jupiter h2 {
-    font-size: 20px;
+    transform: rotate(10deg);
 }
 
 .taleboble-jupiter-tekst {
-width: 75%;
-    margin: 0 5%;
+    width: 75%;
+    margin: 0 12.5%;
     position: absolute;
-    top: 34px;
-    left: 7%;
+    top: 35px;
 }
 
 .sten-jupiter {
@@ -858,14 +814,16 @@ width: 75%;
     left: -5%;
 }
 
+#tekst-merkur {
+    color: var(--merkur);
+}
+
 .taleboble-merkur {
-    width: 270px;
+    width: 300px;
     z-index: 3;
     position: absolute;
-    top: 5%;
-    left: 33%;
-    text-align: center;
-    
+    top: 3%;
+    left: 30%;
 }
 
 .taleboble-merkur img {
@@ -880,11 +838,12 @@ width: 75%;
     width: 75%;
     margin: 0 12.5%;
     position: absolute;
-    top: 50px;
+    top: 65px;
     left: 0;
+    font-size: 20px;
 }
 
-#sten-staar {
+.sten-staar {
     width: 500px;
     transform: scaleX(-1);
     z-index: 2;
@@ -899,7 +858,7 @@ width: 75%;
     position: absolute;
     width: 35%;
     text-wrap: wrap;
-    text-align: center;
+    
     margin-left: 63%;
     top: 15%;
 }
@@ -922,13 +881,16 @@ width: 75%;
     left: -40%;
 }
 
+#tekst-saturn {
+    color: var(--saturn);
+}
+
 .taleboble-saturn {
-    width: 250px;
+    width: 330px;
     z-index: 3;
     position: absolute;
-    top: 53%;
-    left: 24%;
-    text-align: center;
+    top: 50%;
+    left: 20%;
 }
 
 .taleboble-saturn img {
@@ -940,11 +902,10 @@ width: 75%;
 }
 
 .taleboble-saturn-tekst {
-    width: 90%;
-    margin: 0 5%;
+    width: 75%;
+    margin: 0 10%;
     position: absolute;
-    top: 45px;
-    left: 0;
+    top: 50px;
     transform: rotate(325deg);
 }
 
@@ -963,7 +924,6 @@ width: 75%;
     position: absolute;
     width: 50%;
     text-wrap: wrap;
-    text-align: center;
     top: 20%;
     left: 5%;
 }
@@ -985,14 +945,16 @@ width: 75%;
     z-index: 1;
 }
 
+#tekst-venus {
+    color: var(--venus);
+}
+
 .taleboble-venus {
-    width: 270px;
+    width: 310px;
     z-index: 3;
     position: absolute;
-    top: 1%;
-    left: 72%;
-    text-align: center;
-    
+    top: -1%;
+    left: 75%;
 }
 
 .taleboble-venus img {
@@ -1000,7 +962,7 @@ width: 75%;
     position: absolute;
     top: 0;
     left: 0;
-    transform: rotate(5deg);
+    transform: rotate(10deg);
 }
 
 .taleboble-venus-tekst {
@@ -1022,8 +984,20 @@ width: 75%;
 #skyer-venus {
     position: absolute;
     width: 100%;
-    z-index: 2;
+    z-index: 3;
+    bottom: -15%;
+    right: -5%;
 }
+
+#tekst-under-skyer {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    z-index: 2;
+    font-size: 25px;
+    width: 35%;
+}
+
 /************************************************** KOMET **************************************************/
 .komet {
     width: 30%;
@@ -1044,12 +1018,12 @@ width: 75%;
 }
 
 .taleboble-komet {
-    width: 250px;
+    width: 270px;
     z-index: 3;
     position: absolute;
     top: 55%;
     left: 30%;
-    text-align: center;
+    
 }
 
 .taleboble-komet img {
@@ -1057,14 +1031,14 @@ width: 75%;
     position: absolute;
     top: 0;
     left: 0;
-    transform: rotate(15deg);
+    transform: rotate(10deg);
 }
 
 .komet-tekst {
-    width: 80%;
-    margin: 0 10%;
+    width: 75%;
+    margin: 0 12.5%;
     position: absolute;
-    top: 35px;
+    top: 30px;
     left: 0;
 }
 
@@ -1080,18 +1054,17 @@ width: 75%;
 .sten-staar-solen {
     position: absolute;
     top: 20%;
-    left: 60%;
+    right: -20%;
     transform: rotate(-20deg);
     width: 760px;
 }
 
 .taleboble-solen {
-    width: 500px;
+    width: 425px;
     z-index: 3;
     position: absolute;
     top: 0%;
-    left: 33%;
-    text-align: center;
+    right: 25%;
 }
 
 .taleboble-solen img {
@@ -1106,27 +1079,29 @@ width: 75%;
     width: 80%;
     margin: 0 10%;
     position: absolute;
-    top: 70px;
+    top: 90px;
     left: 0;
     font-size: 30px;
 }
 
-
+.taleboble-solen-tekst h2 {
+    font-size: 50px;
+    line-height: 60px;
+}
 
 
 /************************************************** SLUT **************************************************/
 
 
-.slut-taleboble{
-    width: 370px;
+.slut-taleboble {
+    width: 360px;
     z-index: 3;
     position: absolute;
     top: 8%;
     left: 32%;
-    text-align: center;
 }
 
-.slut-taleboble img{
+.slut-taleboble img {
     width: 100%;
 }
 
@@ -1152,12 +1127,11 @@ width: 75%;
     border-radius: 100px;
     width: 100px;
     height: 100px;
-    border: solid 2px  var(--dark-blue);
+    border: solid 2px var(--dark-blue);
     position: absolute;
     bottom: 4%;
     left: 2.5%;
     z-index: 2;
-    text-align: center;
 }
 
 
@@ -1182,7 +1156,7 @@ width: 75%;
 .loadingrocket {
     width: 20%;
     margin-top: 100px;
-    bottom: -50%;
+    bottom: -70%;
     position: absolute;
     display: flex;
     animation: flying 3s linear;
@@ -1194,13 +1168,13 @@ width: 75%;
         transform: translateY(0) translatex(0px) rotate(15deg);
     }
     33% {
-        transform: translateY(-50vh) translatex(20vw) rotate(57deg);
+        transform: translateY(-50vh) translatex(10vw) rotate(57deg);
     }
     66% {
         transform: translateY(-80vh) translatex(50vw) rotate(50deg);
     }
     100% {
-        transform: translateY(-150vh) translatex(80vw) rotate(10deg);
+        transform: translateY(-170vh) translatex(90vw) rotate(10deg);
     }
 }
 

@@ -23,43 +23,47 @@
     <meta name="description" content="">
 
 </head>
-<body>
-    <!-- Loading screen -->
-    <div id="loader" class="loader">
-        <img class="loadingrocket" src="img/raket-ild.webp"></img>
-    </div>
+    <body>
+        <!-- Loading screen -->
+        <div id="loader" class="loader">
+            <img class="loadingrocket" src="img/raket-ild.webp"></img>
+        </div>
 
-    <div id="content" class="hidden">
-        <div class="main-content" >
-            <a class="tilbage-raket" href="cockpit.html">
-                <img src="img/raket.webp" alt="Raket">
-            </a>
+        <div id="content" class="hidden">
+            <div id="main-content" >
+                <a class="tilbage-raket" href="cockpit.html">
+                    <img src="img/raket.webp" alt="Raket">
+                </a>
 
-            <img class="merkur" src="img/planeter/merkur.webp" alt="Merkur">
-            <img id="sten-staar" src="img/sten-staar.webp" alt="Sten står">
-            <div class="taleboble-merkur">
-                <img src="img/taleboble.webp" alt="">
-                <div class="taleboble-merkur-tekst">
-                    <h2>Hold da op!</h2>
-                    <p>Syntes du også tiden går meget hurtigt her?</p>
-                    <p>Prøv at trykke på min arm for at se på mit ur.</p>
+                <img class="merkur" src="img/planeter/merkur.webp" alt="Merkur">
+                <img class="sten-staar" id="planet" src="img/sten-staar.webp" alt="Sten står">
+                <div class="taleboble-merkur">
+                    <img src="img/taleboble.webp" alt="">
+                    <div class="taleboble-merkur-tekst">
+                        <h2>Hold da op!</h2>
+                        <p>Syntes du også tiden går meget hurtigt her?</p>
+                        <p>Prøv at trykke på min arm for at se på mit ur.</p>
+                    </div>
+                </div>
+                
+
+                <div class="tekst-højre" id="tekst-merkur">
+                    <h1>Merkur</h1>
+                    <p>Merkur er den første planet fra solen i vores solsystem! Den ligger tættest på solen og er den mindste planet i solsystemet!</p>
                 </div>
             </div>
             
+            <div class="popup-merkur hidden" id="popup">
+                <img id="hurtig-tid" src="animationer/hurtig-tid.gif" alt="Stens armbåndsur, hvor tiden går hurtigt">
 
-            <div class="tekst-højre">
-                <h1>Merkur</h1>
-                <p>Merkur er den første planet fra solen i vores solsystem! Den ligger tættest på solen og er den mindste planet i solsystemet!</p>
+                <p> Merkur befinder sig tættest på solen derfor går tiden hurtigere end på Jorden. Et år på Merkur varer kun 88 dage!</p>
+                <img class="kryds" id="kryds" src="img/kryds.orange.webp" alt="Kryds">
             </div>
         </div>
-        
-        <div class="popup-merkur popup hidden" >
-            <img id="hurtig-tid" src="animationer/hurtig-tid.gif" alt="Stens armbåndsur, hvor tiden går hurtigt">
+        <script src="js/loader.js"></script>
+        <script src="js/popup.js"></script>
+        <script src="js/inactive.js"></script>
 
-            <p> Merkur befinder sig tættest på solen derfor går tiden hurtigere end på Jorden. Et år på Merkur varer kun 88 dage!</p>
-            <img id="kryds" src="img/kryds.orange.webp" alt="Kryds">
-        </div>
-    </div>
-    <script src="js/loader.js"></script>
-</body>
+
+    </body>
 </html>
