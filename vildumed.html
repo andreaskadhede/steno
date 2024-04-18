@@ -23,6 +23,7 @@
 
 </head>
     <body class="skyer-baggrund">
+
         <div class="vildumed-container">
             <div class="character">
                 <img src="img/sten-uden-taske.webp" alt="Character Image">
@@ -41,10 +42,21 @@
         <audio autoplay hidden repeat src="audio/voicebooking-speech.wav"></audio>
 
 
-        <audio id="baggrund_musik" autoplay controls  hidden src="audio/cosmic-minimal-music-fragment-55131.mp3"></audio>
-        
+        <!-- <audio src="audio/cosmic-minimal-music-fragment-55131.mp3" loop autoplay></audio>
+
+        <audio id="baggrund_musik" loop>
+            <source src="audio/cosmic-minimal-music-fragment-55131.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio> -->
+
+        <audio id="backgroundAudio" autoplay loop>
+            <source src="audio/cosmic-minimal-music-fragment-55131.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
 
         <script src="js/inactive.js"></script>
+        <script src="js/audio.js"></script>
+
 
     </body>
 </html>
