@@ -84,7 +84,7 @@ h2 {
 }
 
 .h1-index{
-    font-size: 130px;
+    font-size: 150px;
     position: absolute;
     z-index: 1;
     width: 100%;
@@ -127,7 +127,7 @@ h2 {
     position: absolute;
     transform: scaleX(-1);
     width: 400px;
-    bottom: -10%;
+    bottom: -20%;
     left: 5%;
 }
 
@@ -153,7 +153,7 @@ h2 {
 
 .character {
     position: absolute;
-    width: 50%;
+    width: 48%;
     transform: scaleX(-1);
     left: 0;
     top: 0;
@@ -203,15 +203,15 @@ h2 {
 .raketa {
     position: absolute;
     height: 615px;
-    right: 15%;
+    right: 20%;
     bottom: 7%;
     z-index: 2;
 }
 
 .stenvinkera {
     position: absolute;
-    height: 435px;
-    left: 10%;
+    height: 455px;
+    left: 15%;
     bottom: 5%;
     transform: scaleX(-1);
     z-index: 2;
@@ -222,8 +222,8 @@ h2 {
     width: 250px;
     z-index: 3;
     position: absolute;
-    top: 18%;
-    left: 32%;
+    top: 10%;
+    left: 35%;
 }
 
 .boblea img {
@@ -264,7 +264,7 @@ h2 {
 .cockpitbund {
     position: absolute;
     width: 100vw;
-    bottom: -15%;
+    bottom: -25%;
     left: 0;
     z-index: 3;
 }
@@ -276,9 +276,9 @@ h2 {
 
 .solenpit {
     position: absolute;
-    height: 700px;
-    top: 4%;
-    right: 78%;
+    height: 650px;
+    top: 0%;
+    right: 81%;
     z-index: 1;
     transform: rotate(80deg);
 }
@@ -293,7 +293,7 @@ h2 {
     height: 73px;
     width: auto;
     top: 38%;
-    left: 20%;
+    left: 16%;
     z-index: 4;
 }
 
@@ -302,7 +302,7 @@ h2 {
     height: 110px;
     width: auto;
     top: 21%;
-    left: 27%;
+    left: 24%;
     z-index: 4;
 }
 
@@ -311,15 +311,15 @@ h2 {
     height: 86px;
     width: auto;
     top: 32%;
-    left: 38%;
+    left: 34%;
 }
 
 .marspit {
     position: absolute;
     height: 78px;
     width: auto;
-    top: 18%;
-    left: 43%;
+    top: 16%;
+    left: 40%;
     z-index: 4;
 }
 
@@ -327,8 +327,8 @@ h2 {
     position: absolute;
     height: 232px;
     width: auto;
-    top: 16%;
-    left: 50%;
+    top: 12%;
+    left: 48%;
     z-index: 4;
 }
 
@@ -336,8 +336,8 @@ h2 {
     position: absolute;
     height: 180px;
     width: auto;
-    top: 32%;
-    left: 66%;
+    top: 30%;
+    left: 65%;
     z-index: 4;
 }
 
@@ -355,16 +355,16 @@ h2 {
     height: 88px;
     width: auto;
     top: 43%;
-    left: 87%;
+    left: 90%;
     z-index: 4;
 }
 
 .hjemknap {
     position: absolute;
-    height: 25%;
-    width: 20%;
-    bottom: 20%;
-    left: 40%;
+    height: 12%;
+    width: 10%;
+    bottom: 27%;
+    left: 45%;
     z-index: 5;
 }
 
@@ -372,8 +372,8 @@ h2 {
     width: 210px;
     z-index: 3;
     position: absolute;
-    top: 50%;
-    left: 27%;
+    top: 48%;
+    left: 29%;
 }
 
 .taleboble-cockpit img {
@@ -423,7 +423,7 @@ h2 {
 .tekst-højre {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 45%;
     justify-content: center;
     align-self: flex-end;
     left: 50%;
@@ -434,15 +434,15 @@ h2 {
 
 .tekst-højre p {
     font-size: 40px;
-    padding: 0 50px;
+    padding: 0 60px;
 }
 
 .taleboble-neptun {
     width: 290px;
     z-index: 3;
     position: absolute;
-    top: 5%;
-    left: 31%;
+    top: 3%;
+    left: 29%;
 }
 
 .taleboble-neptun img {
@@ -466,25 +466,24 @@ h2 {
     transform: scaleX(-1);
     z-index: 2;
     position: absolute;
-    top: 28%;
+    top: 30%;
     left: 18%;
 }
 
 .popup-neptun p {
-    font-size: 40px;
+    font-size: 50px;
     color: var(--neptun);
     position: absolute;
     width: 40%;
     text-wrap: wrap;
-    
     margin-left: 5%;
-    top: 25%;
+    top: 15%;
 }
 
 .popup-neptun .neptun {
     width: 85%;
     position: absolute;
-    top: 37%;
+    top: 30%;
     left: 30%;
     z-index: 1;
 }
@@ -492,8 +491,8 @@ h2 {
 #sten-blæser {
     width: 40%;
     position: absolute;
-    top: 25%;
-    left: 45%;
+    top: 10%;
+    left: 50%;
     z-index: 2;
 }
 
@@ -526,9 +525,8 @@ h2 {
     width: 325px;
     z-index: 3;
     position: absolute;
-    top: 5%;
-    left: 13%;
-    
+    top: 3%;
+    left: 14%;
 }
 
 .taleboble-jorden img {
@@ -559,7 +557,7 @@ h2 {
     height: 78%;
     top: 11%;
     position: absolute;
-    width: 72%;
+    width: 60%;
     background-color: var(--dark-blue);
     z-index: 1;
     color: var(--hvid);
@@ -570,8 +568,7 @@ h2 {
 }
 
 .screen-baggrund h1 {
-    font-size: 150px;
-
+    font-size: 130px;
 }
 
 .screen-baggrund p {
@@ -585,7 +582,7 @@ h2 {
     width: 900px;
     z-index: 1;
     top: 25%;
-    left: -15%;
+    left: -10%;
 }
 
 #tekst-uranus {
@@ -596,7 +593,7 @@ h2 {
     width: 290px;
     z-index: 3;
     position: absolute;
-    left: 33%;
+    left: 32%;
 }
 
 .taleboble-uranus img {
@@ -619,8 +616,8 @@ h2 {
     transform: scaleX(-1);
     z-index: 2;
     position: absolute;
-    top: 30%;
-    left: 25%;
+    top: 25%;
+    left: 23%;
 }
 
 .popup-uranus {
@@ -634,9 +631,8 @@ h2 {
     font-size: 40px;
     color: var(--dark-blue);
     position: absolute;
-    width: 40%;
+    width: 30%;
     text-wrap: wrap;
-    
     z-index: 3;
 }
 
@@ -665,14 +661,14 @@ h2 {
     position: absolute;
     width: 1000px;
     z-index: 1;
-    top: 23%;
+    top: 20%;
     left: 43%;
 }
 
 .tekst-venstre {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 45%;
     justify-content: center;
     align-self: flex-end;
     top: 15%;
@@ -682,15 +678,15 @@ h2 {
 
 .tekst-venstre p {
     font-size: 40px;
-    padding: 0 50px;
+    padding: 0 60px;
 }
 
 .taleboble-mars {
     width: 270px;
     z-index: 3;
     position: absolute;
-    top: 1%;
-    left: 72%;
+    top: -2%;
+    left: 63%;
 }
 
 .taleboble-mars img {
@@ -713,8 +709,8 @@ h2 {
     width: 320px;
     z-index: 2;
     position: absolute;
-    top: 10%;
-    left: 55%;
+    top: 15%;
+    left: 50%;
 }
 
 .rover {
@@ -722,8 +718,8 @@ h2 {
     transform: scaleX(-1) rotate(20deg);
     z-index: 2;
     position: absolute;
-    top: 55%;
-    left: 63%;
+    top: 52%;
+    left: 65%;
 }
 
 .popup-mars {
@@ -732,7 +728,7 @@ h2 {
 }
 
 #infographic {
-    height: 78%;
+    height: 76.5%;
     top: 11%;
     position: absolute;
 }
@@ -749,7 +745,7 @@ h2 {
     position: absolute;
     z-index: 5;
     top: 18vh;
-    left: 82.5vw
+    right: 24.25vw;
 }
 
 /************************************************** JUPITER **************************************************/
@@ -770,8 +766,8 @@ h2 {
     width: 280px;
     z-index: 3;
     position: absolute;
-    top: 23%;
-    left: 13%;
+    top: 20%;
+    left: 15%;
 }
 
 .taleboble-jupiter img {
@@ -795,12 +791,12 @@ h2 {
     z-index: 2;
     position: absolute;
     top: 50%;
-    left: 7%; 
+    left: 9%; 
 }
 
 #motiongraphic {
-    height: 77.5%;
-    top: 6%;
+    height: 77%;
+    top: 11.5%;
     position: absolute;
 }
 /************************************************** MERKUR **************************************************/
@@ -810,7 +806,7 @@ h2 {
     position: absolute;
     width: 1000px;
     z-index: 1;
-    top: 50%;
+    top: 30%;
     left: -5%;
 }
 
@@ -823,7 +819,7 @@ h2 {
     z-index: 3;
     position: absolute;
     top: 3%;
-    left: 30%;
+    left: 25%;
 }
 
 .taleboble-merkur img {
@@ -844,12 +840,12 @@ h2 {
 }
 
 .sten-staar {
-    width: 500px;
+    width: 475px;
     transform: scaleX(-1);
     z-index: 2;
     position: absolute;
     top: 10%;
-    left: 0;
+    left: 2%;
 }
 
 .popup-merkur p {
@@ -865,7 +861,7 @@ h2 {
 
 
 #hurtig-tid {
-    width: 100%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -877,8 +873,8 @@ h2 {
     position: absolute;
     width: 1200px;
     z-index: 1;
-    top: 15%;
-    left: -40%;
+    top: 7%;
+    left: -30%;
 }
 
 #tekst-saturn {
@@ -890,7 +886,7 @@ h2 {
     z-index: 3;
     position: absolute;
     top: 50%;
-    left: 20%;
+    left: 18%;
 }
 
 .taleboble-saturn img {
@@ -914,7 +910,7 @@ h2 {
     z-index: 2;
     position: absolute;
     top: 65%;
-    left: 45%;
+    left: 39%;
 }
 
 
@@ -922,26 +918,27 @@ h2 {
     font-size: 48px;
     color: var(--saturn);
     position: absolute;
-    width: 50%;
+    width: 37%;
     text-wrap: wrap;
-    top: 20%;
+    top: 21%;
     left: 5%;
 }
 
 
 #saturnsringe {
-    height: 175%;
+    height: 200%;
     position: absolute;
-    top: -75%;
-    left: -65%;
+    top: -80%;
+    left: -25%;
+    animation: spin 13s infinite linear;
 }
 
 /************************************************** VENUS **************************************************/
 .venus {
     position: absolute;
-    width: 1000px;
+    width: 1200px;
     top: 40%;
-    left: 35%;
+    left: 40%;
     z-index: 1;
 }
 
@@ -953,8 +950,8 @@ h2 {
     width: 310px;
     z-index: 3;
     position: absolute;
-    top: -1%;
-    left: 75%;
+    top: -2%;
+    left: 65%;
 }
 
 .taleboble-venus img {
@@ -962,7 +959,7 @@ h2 {
     position: absolute;
     top: 0;
     left: 0;
-    transform: rotate(10deg);
+    transform: rotate(15deg);
 }
 
 .taleboble-venus-tekst {
@@ -974,28 +971,28 @@ h2 {
 }
 
 #sten-sveder {
-    width: 320px;
+    width: 300px;
     z-index: 2;
     position: absolute;
-    top: 10%;
-    left: 55%;
+    top: 18%;
+    left: 47%;
 }
 
 #skyer-venus {
     position: absolute;
     width: 100%;
     z-index: 3;
-    bottom: -15%;
+    bottom: -20%;
     right: -5%;
 }
 
 #tekst-under-skyer {
     position: absolute;
-    bottom: 5%;
+    bottom: 10%;
     right: 5%;
     z-index: 2;
     font-size: 25px;
-    width: 35%;
+    width: 30%;
 }
 
 /************************************************** KOMET **************************************************/
@@ -1021,9 +1018,8 @@ h2 {
     width: 270px;
     z-index: 3;
     position: absolute;
-    top: 55%;
+    top: 45%;
     left: 30%;
-    
 }
 
 .taleboble-komet img {
@@ -1031,7 +1027,7 @@ h2 {
     position: absolute;
     top: 0;
     left: 0;
-    transform: rotate(10deg);
+    transform: rotate(15deg);
 }
 
 .komet-tekst {
@@ -1046,17 +1042,17 @@ h2 {
 
 .solen {
     position: absolute;
-    top: -15%;
-    height: 130%;
-    left: -12%;
+    top: -28%;
+    height: 150%;
+    left: -10%;
 }
 
 .sten-staar-solen {
     position: absolute;
     top: 20%;
-    right: -20%;
+    right: -15%;
     transform: rotate(-20deg);
-    width: 760px;
+    width: 700px;
 }
 
 .taleboble-solen {
@@ -1064,7 +1060,7 @@ h2 {
     z-index: 3;
     position: absolute;
     top: 0%;
-    right: 25%;
+    right: 22%;
 }
 
 .taleboble-solen img {
@@ -1097,8 +1093,8 @@ h2 {
     width: 360px;
     z-index: 3;
     position: absolute;
-    top: 8%;
-    left: 32%;
+    top: -2%;
+    left: 34%;
 }
 
 .slut-taleboble img {
