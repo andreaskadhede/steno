@@ -20,3 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Start the timer when the page loads
     resetTimer();
 });
+
+let vid = document.getElementById("baggrund_musik");
+vid.volume = 0.2;

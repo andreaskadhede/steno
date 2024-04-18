@@ -166,9 +166,9 @@ h2 {
 
 .vildumed-text {
     position: absolute;
-    width: 50%;
+    width: 45%;
     height: 100vh;
-    margin-right: 5%;
+    margin-right: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
