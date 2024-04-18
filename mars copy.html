@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars • Steno</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="img/logo.webp">
+
+    <!-- meta/seo -->
+    <meta name="geo.region" content="DK-82">
+    <meta name="geo.placename" content="Midtjylland">
+    <meta name="geo.position" content="56.223769;10.123814">
+    <meta name="ICBM" content="56.223769, 10.123814">
+    <meta name="author" content="Andrea Skadhede, Karoline Eriksen, Katrine Emilie Klockmann & Silja Hansen">
+    <meta name="description" content="">
+
+</head>
+    <body>
+        <!-- Loading screen -->
+        <div id="loader" class="loader">
+            <img class="loadingrocket" src="img/raket-ild.webp" alt="raket">
+        </div>
+
+        <div id="content" class="hidden">
+            <div id="main-content" >
+                <a class="tilbage-raket" href="cockpit.html">
+                    <img src="img/raket.webp" alt="Raket">
+                </a>
+
+                <img class="mars" src="img/planeter/mars.webp" alt="Mars">
+                <img id="sten-staar-mars" src="img/sten-staar.webp" alt="Sten står">
+                <img class="rover" id="planet" src="img/rover.webp" alt="Mars rover">
+                <div class="taleboble-mars">
+                    <img src="img/taleboble.webp" alt="">
+                    <div class="taleboble-mars-tekst">
+                        <h2>Cool!</h2>
+                        <p>En Rover sendt til Mars!</p>
+                        <p>Måske vi kan se nærmere ved at trykke på den.</p>
+                    </div>
+                </div>
+                
+
+                <div class="tekst-venstre">
+                    <h1>Mars</h1>
+                    <p>Mars er den fjerde planet fra solen i vores solsystem!</p>
+                    <p>Det er den eneste planet udover Jorden hvor vi har fundet vand.</p>
+                </div>
+            </div>
+            
+            <div class="popup-mars hidden" id="popup">
+                <img id="infographic" src="img/infographic_da.png" alt="Infographic omkring roveren på Mars">
+                <img id="ramme" src="img/screen.webp" alt="Ramme til infografik">
+                <img class="kryds-screen" id="kryds" src="img/kryds.blaa.webp" alt="Kryds">
+            </div>
+        </div>
+
+        <audio id="baggrund_musik" autoplay controls  hidden src="audio/cosmic-minimal-music-fragment-55131.mp3"></audio>
+
+        <audio id="stemme" autoplay controls hidden src="audio/mars.mp4"></audio>
+        
+        <script src="js/loader.js"></script>
+        <script src="js/popup.js"></script>
+        <script src="js/inactive.js"></script>
+        <script src="js/audio.js"></script>
+
+
+
+    </body>
+</html>
