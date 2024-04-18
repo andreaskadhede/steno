@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
     fetchWorldPopulation();
 
     // Fetch world population every day (86400000 milliseconds = 1 day)
-    setInterval(fetchWorldPopulation, 600);
+    setInterval(fetchWorldPopulation, 6000);
 
 });
 
