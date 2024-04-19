@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercury • Steno</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="img/logo.webp">
+
+</head>
+    <body>
+        <!-- Loading screen start -->
+        <div id="loader" class="loader">
+            <img class="loadingrocket2" src="img/raket-ild.webp" alt="Raket">
+        </div>
+        <!-- loading screen slut -->
+
+        <div id="content" class="hidden">
+            <div id="main-content" >
+                <!-- tilbage knap -->
+                <a class="tilbage-raket" href="cockpit-en.html">
+                    <img src="img/raket.webp" alt="Raket">
+                </a>
+
+                <img class="merkur" src="img/planeter/merkur.webp" alt="Merkur">
+                <img class="sten-staar" id="planet" src="img/sten-staar.webp" alt="Sten står">
+
+                <!-- taleboble -->
+                <div class="taleboble-merkur">
+                    <img src="img/taleboble.webp" alt="">
+                    <div class="taleboble-merkur-tekst">
+                        <h2>Oh wauw!</h2>
+                        <p>Does it seem like the time is going very fast?</p>
+                        <p>Try tapping my arm to check the time.</p>
+                    </div>
+                </div>
+                
+                <!-- teskt -->
+                <div class="tekst-højre" id="tekst-merkur">
+                    <h1>Mercury</h1>
+                    <p>Mercury is the first planet from the Sun in our solar system!</p>
+                    <p>It’s the planet closest to the sun and the smallest planet in our solar system!</p>
+                </div>
+            </div>
+            
+            <!-- popup -->
+            <div class="popup-merkur hidden" id="popup">
+                <img id="hurtig-tid" src="animationer/hurtigtid.gif" alt="Stens armbåndsur, hvor tiden går hurtigt">
+                <p>Mercury is the planet closest to the sun, which means time moves faster than on Earth.</p>
+                <p>One year on Mercury is only 88 days!</p>
+                <img class="kryds" id="kryds" src="img/kryds.orange.webp" alt="Kryds">
+            </div>
+        </div>
+
+        <!-- lyd start -->
+        <audio id="stemme" autoplay controls hidden>
+            <source src="audio/merkur-en.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <audio id="baggrund_musik" autoplay loop controls hidden>
+            <source src="audio/baggrund.mp3" type="audio/mpeg">
+            Your browser does not support the audio element. 
+        </audio>
+        <!-- lyd slut -->
+        
+        <script src="js/loader.js"></script>
+        <script src="js/popup.js"></script>
+        <script src="js/inactive.js"></script>
+        <script src="js/audio.js"></script>
+
+
+
+    </body>
+</html>

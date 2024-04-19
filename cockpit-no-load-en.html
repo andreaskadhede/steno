@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cockpit • Steno</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="img/logo.webp">
+
+</head>
+    <body>
+        <div id="content">
+            
+            <!-- baggrund -->
+            <img class="cockpittop" src="img/baggrund/cockpit_top.webp" alt="Cockpit top">
+            <img class="cockpitbund" src="img/baggrund/cockpit_bund_en.webp" alt="Cockpit bund">
+
+            <!-- planeter -->
+            <div class="planeter">
+                <a href="solen-en.html"><img class="solenpit" src="img/planeter/sol.webp" alt="Solen"></a>
+                <a href="solen-en.html" class="solenpit solenpitdiv"><div></div></a>
+                <a href="merkur-en.html"><img class="merkurpit" src="img/planeter/merkur.webp" alt="Merkur"></a>
+                <a href="venus-en.html"><img class="venuspit" src="img/planeter/venus.webp" alt="Venus"></a>
+                <a href="jorden-en.html"><img class="jordenpit" src="img/planeter/jorden.webp" alt="Jorden"></a>
+                <a href="mars-en.html"><img class="marspit" src="img/planeter/mars.webp" alt="Mars"></a>
+                <a href="jupiter-en.html"><img class="jupiterpit" src="img/planeter/jupiter.webp" alt="Jupiter"></a>
+                <a href="saturn-en.html"><img class="saturnpit" src="img/planeter/saturn.webp" alt="Saturn"></a>
+                <a href="uranus-en.html"><img class="uranuspit" src="img/planeter/uranus.webp" alt="Uranus"></a>
+                <a href="neptun-en.html"><img class="neptunpit" src="img/planeter/neptun.webp" alt="Neptun"></a>
+            </div>
+
+            <!-- taleboble -->
+            <div class="taleboble-cockpit">
+                <img src="img/taleboble.webp" alt="">
+                <div class="cockpit-tekst">
+                    <h2>Well done!</h2>
+                    <p>Tap on the planet you want to visit.</p>
+                </div>
+            </div>
+            
+            <!-- hjem knap -->
+            <a class="hjemknap" href="slut-en.html">
+                <div class="hjemknap"> </div>
+            </a>
+
+        </div>
+
+        <!-- lyd start -->
+        <audio id="stemme" autoplay loop controls hidden>
+            <source src="audio/cockpit-en.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <audio id="baggrund_musik" autoplay loop controls hidden>
+            <source src="audio/baggrund.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <!-- lyd slut -->
+
+
+        <script src="js/loader.js"></script>
+        <script src="js/inactive.js"></script>
+        <script src="js/audio.js"></script>
+
+    </body>
+</html>

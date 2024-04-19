@@ -284,7 +284,7 @@ h2 {
 }
 
 .solenpitdiv {
-    z-index: 6;
+    z-index: 4;
     width: 700px;
 }
 
@@ -294,7 +294,7 @@ h2 {
     width: auto;
     top: 38%;
     left: 16%;
-    z-index: 4;
+    z-index: 5;
 }
 
 .venuspit {
@@ -1176,7 +1176,7 @@ h2 {
     right: 0;
     position: absolute;
     display: flex;
-    animation: flying3 2.5s linear;
+    animation: flying3 2.6s linear;
 }
 
 /* Animation defineres */
@@ -1201,13 +1201,13 @@ h2 {
         transform: translateY(0) translatex(10vw) rotate(345deg);
     }
     33% {
-        transform: translateY(-50vh) translatex(30vw) rotate(303deg);
+        transform: translateY(-50vh) translatex(-10vw) rotate(303deg);
     }
     66% {
         transform: translateY(-80vh) translatex(-40vw) rotate(310deg);
     }
     100% {
-        transform: translateY(-170vh) translatex(-90vw) rotate(350deg);
+        transform: translateY(-170vh) translatex(-80vw) rotate(340deg);
     }
 }
 
@@ -1223,7 +1223,7 @@ h2 {
         transform: translateY(50vh) translatex(-50vw) rotate(230deg);
     }
     100% {
-        transform: translateY(100vh) translatex(-95vw) rotate(200deg);
+        transform: translateY(120vh) translatex(-95vw) rotate(200deg);
     }
 }
 

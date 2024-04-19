@@ -14,29 +14,25 @@
     <!-- favicon -->
     <link rel="icon" href="img/logo.webp">
 
-    <!-- meta/seo -->
-    <meta name="geo.region" content="DK-82">
-    <meta name="geo.placename" content="Midtjylland">
-    <meta name="geo.position" content="56.223769;10.123814">
-    <meta name="ICBM" content="56.223769, 10.123814">
-    <meta name="author" content="Andrea Skadhede, Karoline Eriksen, Katrine Emilie Klockmann & Silja Hansen">
-    <meta name="description" content="">
-
 </head>
     <body>
-        <!-- Loading screen -->
+        <!-- Loading screen start -->
         <div id="loader" class="loader">
-            <img class="loadingrocket" src="img/raket-ild.webp" alt="raket">
+            <img class="loadingrocket2" src="img/raket-ild.webp" alt="Raket">
         </div>
+        <!-- loading screen slut -->
 
         <div id="content" class="hidden">
             <div id="main-content" >
+                <!-- tilbage knap -->
                 <a class="tilbage-raket" href="cockpit.html">
                     <img src="img/raket.webp" alt="Raket">
                 </a>
 
                 <img class="uranus" id="planet" src="img/planeter/uranus.webp" alt="Uranus">
                 <img id="sten-fryser" src="animationer/sten-fryser.gif" alt="Sten står og fryser">
+
+                <!-- taleboble -->
                 <div class="taleboble-uranus">
                     <img src="img/taleboble.webp" alt="">
                     <div class="taleboble-uranus-tekst">
@@ -46,7 +42,7 @@
                     </div>
                 </div>
                 
-
+                <!-- teskt -->
                 <div class="tekst-højre" id="tekst-uranus">
                     <h1>Uranus</h1>
                     <p>Uranus er den syvende planet fra solen i vores solsystem!</p>
@@ -55,12 +51,15 @@
                 </div>
             </div>
 
+            <!-- popup -->
             <div class="popup-uranus hidden" id="popup">
                 <p>Uranus drejer rundt i urets retning, som den eneste planet i vores solsystem.</p>
                 <img id="uranus-drejer" src="img/planeter/uranus.webp" alt="Uranus drejer rundt">
                 <img id="kryds" class="kryds" src="img/kryds.orange.webp" alt="Kryds">
             </div>
         </div>
+
+        <!-- lyd start -->
         <audio id="stemme" autoplay controls hidden>
             <source src="audio/uranus.mp3" type="audio/mpeg">
             Din browser understøtter ikke denne lydfil.
@@ -69,7 +68,9 @@
         <audio id="baggrund_musik" autoplay loop controls hidden>
             <source src="audio/baggrund.mp3" type="audio/mpeg">
             Din browser understøtter ikke denne lydfil.
-        </audio>        
+        </audio>   
+        <!-- lyd slut -->
+        
         <script src="js/loader.js"></script>
         <script src="js/popup.js"></script>
         <script src="js/inactive.js"></script>

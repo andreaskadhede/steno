@@ -13,29 +13,27 @@
     <!-- favicon -->
     <link rel="icon" href="img/logo.webp">
 
-    <!-- meta/seo -->
-    <meta name="geo.region" content="DK-82">
-    <meta name="geo.placename" content="Midtjylland">
-    <meta name="geo.position" content="56.223769;10.123814">
-    <meta name="ICBM" content="56.223769, 10.123814">
-    <meta name="author" content="Andrea Skadhede, Karoline Eriksen, Katrine Emilie Klockmann & Silja Hansen">
-    <meta name="description" content="">
-
 </head>
     <body>
-        <!-- Loading screen -->
+        <!-- Loading screen start -->
         <div id="loader" class="loader">
-            <img class="loadingrocket" src="img/raket-ild.webp" alt="Raket">
+            <img class="loadingrocket2" src="img/raket-ild.webp" alt="Raket">
         </div>
+        <!-- loading screen slut -->
+
 
         <div id="content" class="hidden">
             
             <div id="main-content" >
+                <!-- tilbage knap -->
                 <a class="tilbage-raket" href="cockpit.html">
                     <img src="img/raket.webp" alt="Raket">
                 </a>
+
                 <img class="jorden" id="planet" src="img/planeter/jorden.webp" alt="Jorden">
                 <img class="sten-jorden" src="animationer/sten-vinker.gif" alt="Sten står og vinker">
+
+                <!-- taleboble -->
                 <div class="taleboble-jorden">
                     <img src="img/taleboble.webp" alt="">
                     <div class="taleboble-jorden-tekst">
@@ -45,16 +43,19 @@
                         <p>Prøv at trykke på Jorden for at finde ud af det.</p>
                     </div>
                 </div>
-                
+
+                <!-- tekst -->
                 <div class="tekst-højre" id="tekst-jorden">
                     <h1>Jorden</h1>
-                    <p>Jorden er den tredje planet fra solen i vores solsystem! Det er den eneste planet hvor der er beboelse!</p>
+                    <p>Jorden er den tredje planet fra solen i vores solsystem!</p>
+                    <p>Det er den eneste planet hvor der er beboelse!</p>
                     <p>Pssst....</p>
                     <p>Det er her du befinder dig.</p>
                 </div>
         
             </div>
             
+            <!-- popup -->
             <div class="popup-mars hidden" id="popup" >
                 <div class="screen-baggrund">
                     <h1 id="population">12345678</h1>
@@ -65,6 +66,7 @@
             </div>
         </div>
 
+        <!-- lyd start -->
         <audio id="stemme" autoplay controls hidden>
             <source src="audio/jorden.mp3" type="audio/mpeg">
             Din browser understøtter ikke denne lydfil.
@@ -74,6 +76,7 @@
             <source src="audio/baggrund.mp3" type="audio/mpeg">
             Din browser understøtter ikke denne lydfil.
         </audio>
+        <!-- lyd slut -->
 
         <script src="js/loader.js"></script>
         <script src="js/population.js"></script>

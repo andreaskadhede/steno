@@ -1,0 +1,1 @@
+Beksrivelse af JSON-objecter + intentionen omkring lyden

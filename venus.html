@@ -14,28 +14,24 @@
     <!-- favicon -->
     <link rel="icon" href="img/logo.webp">
 
-    <!-- meta/seo -->
-    <meta name="geo.region" content="DK-82">
-    <meta name="geo.placename" content="Midtjylland">
-    <meta name="geo.position" content="56.223769;10.123814">
-    <meta name="ICBM" content="56.223769, 10.123814">
-    <meta name="author" content="Andrea Skadhede, Karoline Eriksen, Katrine Emilie Klockmann & Silja Hansen">
-    <meta name="description" content="">
-
 </head>
     <body>
-        <!-- Loading screen -->
+        <!-- Loading screen start -->
         <div id="loader" class="loader">
-            <img class="loadingrocket" src="img/raket-ild.webp" alt="raket">
+            <img class="loadingrocket2" src="img/raket-ild.webp" alt="Raket">
         </div>
+        <!-- loading screen slut -->
 
         <div id="content" class="hidden">
+            <!-- tilbage knap -->
             <a class="tilbage-raket" href="cockpit.html">
                 <img src="img/raket.webp" alt="Raket">
             </a>
 
             <img class="venus" src="img/planeter/venus.webp" alt="Venus">
             <img id="sten-sveder" src="animationer/sten-sveder.gif" alt="Sten sveder">
+
+            <!-- taleboble -->
             <div class="taleboble-venus">
                 <img src="img/taleboble.webp" alt="">
                 <div class="taleboble-venus-tekst">
@@ -46,13 +42,14 @@
                 </div>
             </div>
             
-
+            <!-- teskt -->
             <div class="tekst-venstre" id="tekst-venus">
                 <h1>Venus</h1>
                 <p>Venus er den anden planet fra solen i vores solsystem!</p>
                 <p>Det er den varmeste planet ud af alle!</p>
             </div>
 
+            <!-- skyer -->
             <img id="skyer-venus" src="img/skyer.webp" alt="Venus skyer">
             <div id="tekst-under-skyer" class="hidden">
                 <p>Vidste du, at Venus er det andet mest skinnende objekt i vores solsystem?</p>
@@ -60,6 +57,7 @@
             </div>
         </div>
 
+        <!-- lyd start -->
         <audio id="stemme" autoplay controls hidden>
             <source src="audio/venus.mp3" type="audio/mpeg">
             Din browser understøtter ikke denne lydfil.
@@ -69,6 +67,7 @@
             <source src="audio/baggrund.mp3" type="audio/mpeg">
             Din browser understøtter ikke denne lydfil.
         </audio>
+        <!-- lyd slut -->
 
         <script src="js/loader.js"></script>
         <script src="js/skyer.js"></script>

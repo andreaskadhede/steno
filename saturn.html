@@ -14,29 +14,25 @@
     <!-- favicon -->
     <link rel="icon" href="img/logo.webp">
 
-    <!-- meta/seo -->
-    <meta name="geo.region" content="DK-82">
-    <meta name="geo.placename" content="Midtjylland">
-    <meta name="geo.position" content="56.223769;10.123814">
-    <meta name="ICBM" content="56.223769, 10.123814">
-    <meta name="author" content="Andrea Skadhede, Karoline Eriksen, Katrine Emilie Klockmann & Silja Hansen">
-    <meta name="description" content="">
-
 </head>
     <body>
-        <!-- Loading screen -->
+        <!-- Loading screen start -->
         <div id="loader" class="loader">
-            <img class="loadingrocket" src="img/raket-ild.webp" alt="raket">
+            <img class="loadingrocket2" src="img/raket-ild.webp" alt="Raket">
         </div>
+        <!-- loading screen slut -->
 
         <div id="content" class="hidden">
             <div id="main-content">
+                <!-- tilbage knap -->
                 <a class="tilbage-raket" href="cockpit.html">
                     <img src="img/raket.webp" alt="Raket">
                 </a>
 
                 <img class="saturn" id="planet" src="img/planeter/saturn.webp" alt="Saturn">
                 <img id="sten-flyver" src="animationer/sten-flyver.gif" alt="Sten hænger i Saturnsringe">
+
+                <!-- taleboble -->
                 <div class="taleboble-saturn">
                     <img src="img/taleboble.webp" alt="">
                     <div class="taleboble-saturn-tekst">
@@ -44,18 +40,18 @@
                         <p>Jeg må hellere holde godt fast!</p>
                         <p>Gad vide, hvad Saturns ringe er lavet af?</p>
                         <p>Prøv at trykke på ringene for at se.</p>
-
                     </div>
                 </div>
                 
-
+                <!-- tekst -->
                 <div class="tekst-højre" id="tekst-saturn">
                     <h1>Saturn</h1>
                     <p>Saturn er den sjette planet fra solen i vores solsystem!</p>
                     <p>Vidste du godt at man ikke kan stå på Saturn, fordi det er en gas planet?</p>
                 </div>
-
             </div>
+
+            <!-- popup -->
             <div class="popup-saturn hidden" id="popup">
                 <p>Saturns ringe er tynde skiver dannet af små is- og stenklumper.</p>
                 <img id="saturnsringe" src="img/ring.webp" alt="Saturnsringe tæt på">
@@ -63,6 +59,7 @@
             </div>
         </div>
 
+        <!-- lyd start -->
         <audio id="stemme" autoplay controls hidden>
             <source src="audio/saturn.mp3" type="audio/mpeg">
             Din browser understøtter ikke denne lydfil.
@@ -72,6 +69,7 @@
             <source src="audio/baggrund.mp3" type="audio/mpeg">
             Din browser understøtter ikke denne lydfil.
         </audio>
+        <!-- lyd slut -->
         
         <script src="js/loader.js"></script>
         <script src="js/popup.js"></script>

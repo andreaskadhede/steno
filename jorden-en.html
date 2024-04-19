@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earth • Steno</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="img/logo.webp">
+
+</head>
+    <body>
+        <!-- Loading screen start -->
+        <div id="loader" class="loader">
+            <img class="loadingrocket2" src="img/raket-ild.webp" alt="Raket">
+        </div>
+        <!-- loading screen slut -->
+
+
+        <div id="content" class="hidden">
+            
+            <div id="main-content" >
+                <!-- tilbage knap -->
+                <a class="tilbage-raket" href="cockpit-en.html">
+                    <img src="img/raket.webp" alt="Raket">
+                </a>
+
+                <img class="jorden" id="planet" src="img/planeter/jorden.webp" alt="Jorden">
+                <img class="sten-jorden" src="animationer/sten-vinker.gif" alt="Sten står og vinker">
+
+                <!-- taleboble -->
+                <div class="taleboble-jorden">
+                    <img src="img/taleboble.webp" alt="">
+                    <div class="taleboble-jorden-tekst">
+                        <h2>Yay!</h2>
+                        <p>It’s good to be home for a visit.</p>
+                        <p>Have you ever wondered how many people there are on Earth?</p>
+                        <p>Try to tap on Earth and see. .</p>
+                    </div>
+                </div>
+
+                <!-- tekst -->
+                <div class="tekst-højre" id="tekst-jorden">
+                    <h1>Earth</h1>
+                    <p>The Earth is the third planet from the Sun in our solar system!</p>
+                    <p>It’s the only planet with life on it!</p>
+                    <p>Pssst....</p>
+                    <p>It’s where you are right now.</p>
+                </div>
+        
+            </div>
+            
+            <!-- popup -->
+            <div class="popup-mars hidden" id="popup" >
+                <div class="screen-baggrund">
+                    <h1 id="population">12345678</h1>
+                    <p>Mennesker på jorden lige nu</p>
+                </div>
+                <img id="ramme" src="img/screen.webp" alt="Ramme til infografik">
+                <img class="kryds-screen" id="kryds" src="img/kryds.orange.webp" alt="Kryds">
+            </div>
+        </div>
+
+        <!-- lyd start -->
+        <audio id="stemme" autoplay controls hidden>
+            <source src="audio/jorden-en.mp3" type="audio/mpeg">
+            Your browser does not support the audio element. 
+        </audio>
+
+        <audio id="baggrund_musik" autoplay loop controls hidden>
+            <source src="audio/baggrund.mp3" type="audio/mpeg">
+            Your browser does not support the audio element. 
+        </audio>
+        <!-- lyd slut -->
+
+        <script src="js/loader.js"></script>
+        <script src="js/population.js"></script>
+        <script src="js/popup.js"></script>
+        <script src="js/inactive.js"></script>
+        <script src="js/audio.js"></script>
+
+
+    </body>
+</html>

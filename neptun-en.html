@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neptune • Steno</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="img/logo.webp">
+
+</head>
+    <body>
+        <!-- Loading screen start -->
+        <div id="loader" class="loader">
+            <img class="loadingrocket2" src="img/raket-ild.webp" alt="Raket">
+        </div>
+        <!-- loading screen slut -->
+
+        <div id="content" class="hidden">
+            <div id="main-content" >
+                <!-- tilbage knap -->
+                <a class="tilbage-raket" href="cockpit-en.html">
+                    <img src="img/raket.webp" alt="Raket">
+                </a>
+
+                <img class="neptun" id="planet" src="img/planeter/neptun.webp" alt="Neptun">
+                <img id="sten-sidder" src="animationer/sten-sidder.gif" alt="Sten sidder og vifter emd fødderne">
+
+                <!-- taleboble -->
+                <div class="taleboble-neptun">
+                    <img src="img/taleboble.webp" alt="">
+                    <div class="taleboble-neptun-tekst">
+                        <h2>Wait!</h2>
+                        <p>I think the wind is picking up.</p>
+                        <p>I Wonder why that is.</p>
+                        <p>Try to tap on Neptune and find out why.</p>
+                    </div>
+                </div>
+                
+                <!-- tekst -->
+                <div class="tekst-højre">
+                    <h1>Neptune</h1>
+                    <p>Neptune is the eighth and the last planet from the Sun in our solar system!</p>
+                    <p>Did you know that Neptune has 14 moons?</p>
+                </div>
+            </div>
+            
+            <!-- popup -->
+            <div class="popup-neptun hidden" id="popup"> 
+                <p>On Neptune there’s very violent gusts of wind called 'Supersonic winds'.</p>
+                <img class="neptun" src="img/planeter/neptun.webp" alt="Neptun">
+                <img id="sten-blæser" src="animationer/sten-blaeser.gif" alt="Sten står med en paraply og bliver blæst bagover">
+                <img id="kryds" class="kryds" src="img/kryds.orange.webp" alt="Kryds">
+            </div>
+        </div>
+
+        <!-- lyd start -->
+        <audio id="stemme" autoplay controls hidden>
+            <source src="audio/neptun-en.mp3" type="audio/mpeg">
+            Your browser does not support the audio element. 
+        </audio>
+
+        <audio id="baggrund_musik" autoplay loop controls hidden>
+            <source src="audio/baggrund.mp3" type="audio/mpeg">
+            Your browser does not support the audio element. 
+        </audio>
+        <!-- lyd slut -->
+
+        <script src="js/loader.js"></script>
+        <script src="js/popup.js"></script>
+        <script src="js/inactive.js"></script>
+        <script src="js/audio.js"></script>
+
+
+
+    </body>
+</html>

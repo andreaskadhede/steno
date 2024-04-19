@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uranus • Steno</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="img/logo.webp">
+
+</head>
+    <body>
+        <!-- Loading screen start -->
+        <div id="loader" class="loader">
+            <img class="loadingrocket2" src="img/raket-ild.webp" alt="Raket">
+        </div>
+        <!-- loading screen slut -->
+
+        <div id="content" class="hidden">
+            <div id="main-content" >
+                <!-- tilbage knap -->
+                <a class="tilbage-raket" href="cockpit-en.html">
+                    <img src="img/raket.webp" alt="Raket">
+                </a>
+
+                <img class="uranus" id="planet" src="img/planeter/uranus.webp" alt="Uranus">
+                <img id="sten-fryser" src="animationer/sten-fryser.gif" alt="Sten står og fryser">
+
+                <!-- taleboble -->
+                <div class="taleboble-uranus">
+                    <img src="img/taleboble.webp" alt="">
+                    <div class="taleboble-uranus-tekst">
+                        <h2>Oh!</h2>
+                        <p>Do you get all
+                            dizzy suddenly, too?</p>
+                        <p>Let’s see if we can
+                            find out why by tapping Uranus.</p>
+                    </div>
+                </div>
+                
+                <!-- teskt -->
+                <div class="tekst-højre" id="tekst-uranus">
+                    <h1>Uranus</h1>
+                    <p>Uranus is the seventh planet from the Sun in our solar system!</p>
+                    <p>It’s the coldest planet of all,</p>
+                    <p>which is why we call it an ‘Ice-planet’.</p>
+                </div>
+            </div>
+
+            <!-- popup -->
+            <div class="popup-uranus hidden" id="popup">
+                <p>Uranus is the only planet in our solar system that spins in the direction of a clock.</p>
+                <img id="uranus-drejer" src="img/planeter/uranus.webp" alt="Uranus drejer rundt">
+                <img id="kryds" class="kryds" src="img/kryds.orange.webp" alt="Kryds">
+            </div>
+        </div>
+
+        <!-- lyd start -->
+        <audio id="stemme" autoplay controls hidden>
+            <source src="audio/uranus.mp3" type="audio/mpeg">
+            Din browser understøtter ikke denne lydfil.
+        </audio>
+
+        <audio id="baggrund_musik" autoplay loop controls hidden>
+            <source src="audio/baggrund.mp3" type="audio/mpeg">
+            Din browser understøtter ikke denne lydfil.
+        </audio>   
+        <!-- lyd slut -->
+        
+        <script src="js/loader.js"></script>
+        <script src="js/popup.js"></script>
+        <script src="js/inactive.js"></script>
+        <script src="js/audio.js"></script>
+
+
+
+    </body>
+</html>

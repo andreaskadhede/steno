@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sun • Steno</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="img/logo.webp">
+
+</head>
+    <body>
+        <!-- Loading screen start -->
+        <div id="loader" class="loader">
+            <img class="loadingrocket2" src="img/raket-ild.webp" alt="Raket">
+        </div>
+        <!-- loading screen slut -->
+
+        <div id="content" class="hidden">
+            <!-- tilbage knap -->
+            <a class="tilbage-raket" href="cockpit-en.html">
+                <img src="img/raket.webp" alt="Raket">
+            </a>
+            
+            <img class="solen" src="animationer/sol_animation.gif" alt="Solen">
+            <img class="sten-staar-solen" src="img/sten-staar.webp" alt="Sten står">
+            
+            <!-- taleboble -->
+            <div class="taleboble-solen">
+                <img src="img/taleboble.webp" alt="">
+                <div class="taleboble-solen-tekst">
+                    <h2>Hey hey!</h2>
+                    <p>Do you have any idea 
+                        how hot the sun is?!</p>
+                    <p>Do you have any idea 
+                        how hot the sun is?!
+                        We can’t land there 
+                        without melting!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- lyd start -->
+        <audio id="stemme" autoplay controls hidden>
+            <source src="audio/solen_en.mp3" type="audio/mpeg">
+            Din browser understøtter ikke denne lydfil.
+        </audio>
+
+        <audio id="baggrund_musik" autoplay loop controls hidden>
+            <source src="audio/baggrund.mp3" type="audio/mpeg">
+            Din browser understøtter ikke denne lydfil.
+        </audio>
+
+        <audio id="solLyd" autoplay loop controls hidden>
+            <source src="audio/sun-lyd.mp3" type="audio/mpeg">
+            Din browser understøtter ikke denne lydfil.
+        </audio>
+        <!-- lyd slut -->
+
+        <script src="js/loader.js"></script>
+        <script src="js/inactive.js"></script>
+        <script src="js/audio.js"></script>
+
+    </body>
+</html>

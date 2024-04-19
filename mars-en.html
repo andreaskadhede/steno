@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars • Steno</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="img/logo.webp">
+
+</head>
+    <body>
+        <!-- Loading screen start -->
+        <div id="loader" class="loader">
+            <img class="loadingrocket2" src="img/raket-ild.webp" alt="Raket">
+        </div>
+        <!-- loading screen slut -->
+
+        <div id="content" class="hidden">
+            <div id="main-content" >
+                <!-- tilbage knap -->
+                <a class="tilbage-raket" href="cockpit-en.html">
+                    <img src="img/raket.webp" alt="Raket">
+                </a>
+
+                <img class="mars" src="img/planeter/mars.webp" alt="Mars">
+                <img id="sten-staar-mars" src="img/sten-staar.webp" alt="Sten står">
+                <img class="rover" id="planet" src="img/rover.webp" alt="Mars rover">
+
+                <!-- taleboble -->
+                <div class="taleboble-mars">
+                    <img src="img/taleboble.webp" alt="">
+                    <div class="taleboble-mars-tekst">
+                        <h2>Cool!</h2>
+                        <p>A Rover sent to Mars!</p>
+                        <p>Maybe we should take a closer look by tapping on it?</p>
+                    </div>
+                </div>
+                
+                <!-- tekst -->
+                <div class="tekst-venstre">
+                    <h1>Mars</h1>
+                    <p>Mars is the fourth planet from the Sun in our solar system!</p>
+                    <p>It’s the only planet, aside from Earth, where we have found water.</p>
+                </div>
+            </div>
+            
+            <!-- popup -->
+            <div class="popup-mars hidden" id="popup">
+                <img id="infographic" src="img/infographic_en.png" alt="Infographic omkring roveren på Mars">
+                <img id="ramme" src="img/screen.webp" alt="Ramme til infografik">
+                <img class="kryds-screen" id="kryds" src="img/kryds.blaa.webp" alt="Kryds">
+            </div>
+        </div>
+
+        <!-- lyd start -->
+        <audio id="stemme" autoplay controls hidden>
+            <source src="audio/mars-en.mp3" type="audio/mpeg">
+            Your browser does not support the audio element. 
+        </audio>
+
+        <audio id="baggrund_musik" autoplay loop controls hidden>
+            <source src="audio/baggrund.mp3" type="audio/mpeg">
+            Your browser does not support the audio element. 
+        </audio>
+        <!-- lyd slut -->
+        
+        <script src="js/loader.js"></script>
+        <script src="js/popup.js"></script>
+        <script src="js/inactive.js"></script>
+        <script src="js/audio.js"></script>
+
+
+
+    </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kometer • Steno</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="img/logo.webp">
+
+</head>
+    <body>
+        <!-- baggrund -->
+        <img class="cockpittop" src="img/baggrund/cockpit_top.webp" alt="Cockpit top">
+        <img class="cockpitbund" src="img/baggrund/cockpit_bund.webp" alt="Cockpit bund">
+
+        <img class="komet" src="img/komet.webp" alt="Komet">
+
+        <!-- taleboble -->
+        <div class="taleboble-komet">
+            <img src="img/taleboble.webp" alt="">
+            <div class="komet-tekst">
+                <h2>Wow!</h2>
+                <p>A huge comet just flew past us!</p>
+                <p>I guess that makes sense when Jupiter is known as a ‘Comet catcher’!</p>
+            </div>
+        </div>
+
+        <!-- lyd start -->
+        <audio id="stemme" autoplay controls hidden>
+            <source src="audio/komet-en.mp3" type="audio/mpeg">
+            Your browser does not support the audio element. 
+        </audio>
+
+        <audio id="baggrund_musik" autoplay loop controls hidden>
+            <source src="audio/baggrund.mp3" type="audio/mpeg">
+            Your browser does not support the audio element. 
+        </audio>
+        <!-- lyd slut -->
+        
+        <script src="js/inactive.js"></script>
+        <script src="js/komet.js"></script>
+        <script src="js/audio.js"></script>
+
+
+    </body>
+</html>

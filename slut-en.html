@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>End • Steno</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="img/logo.webp">
+
+</head>
+    <body class="skyer-baggrund">
+        <!-- Loading screen start -->
+        <div id="loader" class="loader">
+            <img class="loadingrocket2" src="img/raket-ild.webp" alt="Raket">
+        </div>
+        <!-- loading screen slut -->
+
+        <div id="content" class="hidden">
+
+            <img class="logo" src="img/logo.webp" alt="">
+
+            <!-- spil igen knap -->
+            <a href="index-en.html">
+                <h1 class="spil-igen">Play again</h1>
+            </a>
+            
+            <img class="raketa" src="img/raket.webp" alt="Raket">
+            <img class="stenvinkera" src="animationer/sten-vinker.gif" alt="Sten vinker GIF">
+
+            <!-- taleboble -->
+            <div class="slut-taleboble">
+                <img src="img/taleboble.webp" alt="">
+                <div class="slut-taleboble-tekst">
+                    <h2>Wow!</h2>
+                    <p>We found a lot of good information about the planets.</p>
+                    <p>Thank you for joining me on my mission!</p>
+                </div>
+            </div>
+            
+            <img class="land" src="img/baggrund/land.webp" alt="Jord land">
+        </div>
+
+        <!-- lyd start -->
+        <audio id="stemme" autoplay controls hidden>
+            <source src="audio/slut-en.mp3" type="audio/mpeg">
+            Din browser understøtter ikke denne lydfil.
+        </audio>
+
+        <audio id="baggrund_musik" autoplay loop controls hidden>
+            <source src="audio/baggrund.mp3" type="audio/mpeg">
+            Din browser understøtter ikke denne lydfil.
+        </audio>
+        <!-- lyd slut -->
+
+        <script src="js/loader.js"></script>
+        <script src="js/inactive.js"></script>
+        <script src="js/inactive.js"></script>
+        <script src="js/audio.js"></script>
+
+
+    </body>
+</html>
