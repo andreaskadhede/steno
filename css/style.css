@@ -94,7 +94,7 @@ h2 {
 .logo{
     position: absolute;
     top: 6%;
-    left: 5%;
+    left: 4%;
     width: 80px;
     z-index: 1;
     transform: translate(-50%, -50%);
@@ -102,7 +102,7 @@ h2 {
 
 .sprog {
     position: absolute;
-    left: 84%;
+    left: 86.5%;
     display: flex;
 }
 
@@ -392,6 +392,15 @@ h2 {
     left: 0;
 }
 
+.cockpit-tekst-en {
+    top: 50px;
+}
+
+.cockpit-tekst-en h2 {
+    font-size: 30px;
+    line-height: 40px;
+}
+
 /* Styling af cockpit.html slut */
 
 /************************************************** PLANETER (ALLE) **************************************************/
@@ -443,6 +452,10 @@ h2 {
     position: absolute;
     top: 3%;
     left: 29%;
+}
+
+.taleboble-neptun-en {
+    width: 310px;
 }
 
 .taleboble-neptun img {
@@ -529,6 +542,10 @@ h2 {
     left: 14%;
 }
 
+.taleboble-jorden-en {
+    width: 335px;
+}
+
 .taleboble-jorden img {
     width: 100%;
     position: absolute;
@@ -542,6 +559,10 @@ h2 {
     margin: 0 10%;
     position: absolute;
     top: 45px;
+}
+
+.taleboble-jorden-tekst-en {
+    top: 55px;
 }
 
 .sten-jorden {
@@ -884,7 +905,7 @@ h2 {
     width: 330px;
     z-index: 3;
     position: absolute;
-    top: 50%;
+    top: 46%;
     left: 18%;
 }
 
@@ -904,14 +925,19 @@ h2 {
     transform: rotate(325deg);
 }
 
+.taleboble-saturn-tekst-en {
+    width: 70%;
+    margin: 0 12%;
+    top: 70px;
+}
+
 #sten-flyver {
     width: 500px;
     z-index: 2;
     position: absolute;
-    top: 65%;
+    top: 61%;
     left: 39%;
 }
-
 
 .popup-saturn p {
     font-size: 48px;
@@ -1022,6 +1048,10 @@ h2 {
     left: 30%;
 }
 
+.taleboble-komet-en {
+    width: 290px;
+}
+
 .taleboble-komet img {
     width: 100%;
     position: absolute;
@@ -1036,6 +1066,10 @@ h2 {
     position: absolute;
     top: 30px;
     left: 0;
+}
+
+.komet-tekst-en {
+    top: 33px;
 }
 
 /************************************************** SOLEN **************************************************/
@@ -1123,6 +1157,23 @@ h2 {
     border-radius: 100px;
     width: 100px;
     height: 100px;
+    border: solid 2px var(--dark-blue);
+    position: absolute;
+    bottom: 4%;
+    left: 2.5%;
+    z-index: 2;
+}
+
+.spil-igen-en{
+    background-color: var(--hvid);
+    color: var(--dark-blue);
+    padding: 25px 18px;
+    font-size: 23px;
+    line-height: 27px;
+    cursor: pointer;
+    border-radius: 100px;
+    width: 110px;
+    height: 110px;
     border: solid 2px var(--dark-blue);
     position: absolute;
     bottom: 4%;
