@@ -4,14 +4,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     function fetchWorldPopulation() {
-        // API endpoint for world population
+        // API endpoint for verdens population
         const url = "http://api.worldbank.org/v2/country/WLD/indicator/SP.POP.TOTL?format=json";
 
-        // Fetch data from the API
+        // Fetch data fra API
         fetch(url)
             .then(response => response.json())
             .then(data => {
-                // Extract world population data
+                // henter populations data
                 const worldPopulation = data[1].filter(item => item.value !== null)[0].value;
                 const formattedPopulation = worldPopulation.toLocaleString(); /* Giver det lange tal punktummer, så det er nemmere at læse */
 
@@ -19,9 +19,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 let population = document.getElementById("population");
                 population.innerHTML = `${formattedPopulation}`; /* Ændrer tallet på skærmen til det rigtige tal */
 
-
-
-                // Format the population number with commas
             })
             .catch(error => {
                 console.error("Error fetching data:", error);
@@ -30,10 +27,10 @@ document.addEventListener("DOMContentLoaded", function() {
             
     }
 
-    // Fetch world population initially
+    // Kalder funktionen for at hente data
     fetchWorldPopulation();
 
-    // Fetch world population every day (86400000 milliseconds = 1 day)
+    // Henter data hvert 6 sekund
     setInterval(fetchWorldPopulation, 6000);
 
 });

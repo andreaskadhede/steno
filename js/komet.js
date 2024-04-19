@@ -4,7 +4,7 @@
 document.addEventListener("click", backToCockpit)
 
 function backToCockpit() {
-    window.location.href = '/cockpit.html';
+    window.location.href = '/cockpit-no-load.html';
 };
 
 
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function redirectToAnotherSite() {
-        window.location.href = '/cockpit.html'; // Ændrer sidne til cockpit efter 10 sekunder
+        window.location.href = '/cockpit-no-load.html'; // Ændrer sidne til cockpit efter 10 sekunder
     }
 
     // Starter timeren på ny
