@@ -1,8 +1,8 @@
 "use strict"
 
 
-// let vid = document.getElementById("baggrund_musik");
-// vid.volume = 0.15;
+let vid = document.getElementById("baggrund_musik");
+vid.volume = 0.15;
 
 
 // window.addEventListener('DOMContentLoaded', (event) => {

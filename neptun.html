@@ -62,9 +62,15 @@
             </div>
         </div>
 
-        <audio id="baggrund_musik" autoplay controls  hidden src="audio/cosmic-minimal-music-fragment-55131.mp3"></audio>
-        
-        <audio autoplay controls hidden src="audio/neptun.mp4"></audio>
+        <audio id="stemme" autoplay loop controls hidden>
+            <source src="audio/neptun.mp3" type="audio/mpeg">
+            Din browser understøtter ikke denne lydfil.
+        </audio>
+
+        <audio id="baggrund_musik" autoplay loop controls hidden>
+            <source src="audio/baggrund.mp3" type="audio/mpeg">
+            Din browser understøtter ikke denne lydfil.
+        </audio>
 
         <script src="js/loader.js"></script>
         <script src="js/popup.js"></script>

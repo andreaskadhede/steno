@@ -39,24 +39,18 @@
             </div>
         </div>
 
-        <audio autoplay hidden repeat src="audio/voicebooking-speech.wav"></audio>
+        <audio id="stemme" autoplay loop controls hidden>
+            <source src="audio/vildumed.mp3" type="audio/mpeg">
+            Din browser understøtter ikke denne lydfil.
+        </audio>
 
-
-        <!-- <audio src="audio/cosmic-minimal-music-fragment-55131.mp3" loop autoplay></audio>
-
-        <audio id="baggrund_musik" loop>
-            <source src="audio/cosmic-minimal-music-fragment-55131.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio> -->
-
-        <audio id="backgroundAudio" autoplay loop>
-            <source src="audio/cosmic-minimal-music-fragment-55131.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
+        <audio id="baggrund_musik" autoplay loop controls hidden>
+            <source src="audio/baggrund.mp3" type="audio/mpeg">
+            Din browser understøtter ikke denne lydfil.
         </audio>
 
         <script src="js/inactive.js"></script>
         <script src="js/audio.js"></script>
-
 
     </body>
 </html>
