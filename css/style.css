@@ -1001,6 +1001,7 @@ h2 {
     top: -20%;
     right: -30%;
     animation: komet 2s linear;
+    animation-delay: 3s;
 }
 
 /* Animation defineres */
