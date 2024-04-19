@@ -527,7 +527,15 @@ h2 {
     z-index: 1;
     top: 35%;
     left: -5%;
+}
 
+.jordendiv {
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    z-index: 5;
+    top: 35%;
+    left: -5%;
 }
 
 #tekst-jorden {
