@@ -80,8 +80,7 @@ På hele siden har vi anvendt en EventListener som lytter efter om indholdet i D
     document.addEventListener('keydown', resetTimer);
 
     // Starter timeren på ny
-    resetTimer();
-});`
+    resetTimer();`
 
 ##### loader.js
 `document.addEventListener("DOMContentLoaded", function() {
@@ -100,8 +99,7 @@ På hele siden har vi anvendt en EventListener som lytter efter om indholdet i D
     function showContent() {
         const content = document.getElementById("content");
         content.style.display = "block";
-    }
-});`
+    });`
 
 ### Musikken i baggrunden
 
