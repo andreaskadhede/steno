@@ -527,7 +527,15 @@ h2 {
     z-index: 1;
     top: 35%;
     left: -5%;
+}
 
+.jordendiv {
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    z-index: 5;
+    top: 35%;
+    left: -5%;
 }
 
 #tekst-jorden {
@@ -1027,7 +1035,7 @@ h2 {
     top: -20%;
     right: -30%;
     animation: komet 2s linear;
-    animation-delay: 3s;
+    animation-delay: 1.5s;
 }
 
 /* Animation defineres */
