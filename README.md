@@ -86,7 +86,7 @@ På hele siden har vi anvendt en EventListener som lytter efter om indholdet i D
 
 ##### loader.js
 
-    `document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", function() {
         setTimeout(() => {
             hideLoader();
             showContent();
@@ -103,7 +103,7 @@ På hele siden har vi anvendt en EventListener som lytter efter om indholdet i D
             const content = document.getElementById("content");
             content.style.display = "block";
         }
-    });`
+    });
     
 
 ### Musikken i baggrunden
