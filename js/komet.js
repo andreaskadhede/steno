@@ -9,7 +9,7 @@ function backToCockpit() {
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    let inactivityTime = 12000; // Tiden i millisekunder
+    let inactivityTime = 10000; // Tiden i millisekunder
     let timeoutId;
 
     function timer() {
