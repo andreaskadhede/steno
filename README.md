@@ -22,7 +22,7 @@ Vi har i vores løsning anvendt forskellige EventListeners til at udløse events
 #### Skyerne på Venus
 På planeten Venus har vi tilføjet en EventListener på skyerne, som aktiveres når man trykker på dem, så de fader ud og teksten under dem, bliver synlig.
 
-    `const skyer = document.getElementById("skyer-venus");
+    const skyer = document.getElementById("skyer-venus");
     const tekst = document.getElementById("tekst-under-skyer");
 
     // lytter efter tryk på skyerne, som fjerner skyerne og viser teksten under
@@ -30,12 +30,12 @@ På planeten Venus har vi tilføjet en EventListener på skyerne, som aktiveres 
         skyer.style.transition = "opacity 2s";
         skyer.style.opacity = "0";
         tekst.classList.remove("hidden");
-    });`
+    });
 
 #### Pop ups
 På de forskellige planeter har vi anvendt en EventListener, som lytter efter et klik på de forskellige udløsere, som åbner og lukker vores pop up information.
 
-    `// kalder funktionen close() ved at trykke på kryds
+    // kalder funktionen close() ved at trykke på kryds
     kryds.addEventListener("click", function() {
         close();
     });
@@ -56,14 +56,14 @@ På de forskellige planeter har vi anvendt en EventListener, som lytter efter et
     function close() {
         mainContent.classList.remove('hidden');
         popUp.classList.add('hidden');
-    };`
+    };
 
 #### Timer
 På hele siden har vi anvendt en EventListener som lytter efter om indholdet i DOM er indlæst. Når det er sket, sætter den gang i funktionen resetTimer(). Den ene timer sender brugeren tilbage til start-siden efter 50 sekunder med inaktivitet. Den anden timer er loading-skærmen der viser indholdet på siden efter minimum 2,5 sekunder, eller efter indholdet på siden er indlæst.
 
 ##### inactive.js
 
-    `document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('DOMContentLoaded', () => {
         let inactivityTime = 50000; // Tiden i millisekunder
         let timeoutId;
 
@@ -82,7 +82,7 @@ På hele siden har vi anvendt en EventListener som lytter efter om indholdet i D
 
         // Starter timeren på ny
         resetTimer();
-    });`
+    });
 
 ##### loader.js
 
