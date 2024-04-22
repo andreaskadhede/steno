@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function fetchWorldPopulation() {
         // API endpoint for verdens population
-        const url = "http://api.worldbank.org/v2/country/WLD/indicator/SP.POP.TOTL?format=json";
+        const url = "https://api.worldbank.org/v2/country/WLD/indicator/SP.POP.TOTL?format=json";
 
         // Fetch data fra API
         fetch(url)
