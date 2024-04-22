@@ -30,41 +30,39 @@ skyer.addEventListener("click", function() {
     skyer.style.transition = "opacity 2s";
     skyer.style.opacity = "0";
     tekst.classList.remove("hidden");
-});
-`
+});`
 
 #### Pop ups
 På de forskellige planeter har vi anvendt en EventListener, som lytter efter et klik på de forskellige udløsere, som åbner og lukker vores pop up information.
 
-`
-// kalder funktionen close() ved at trykke på kryds
-    kryds.addEventListener("click", function() {
-        close();
-    });
+`// kalder funktionen close() ved at trykke på kryds
+kryds.addEventListener("click", function() {
+    close();
+});
 
-    // kalder funktionen popup() ved at trykke på planeten, armen eller anden udløser
-    planet.addEventListener("click", function() {
-        popup();
-    });
+// kalder funktionen popup() ved at trykke på planeten, armen eller anden udløser
+planet.addEventListener("click", function() {
+    popup();
+});
 
-    // funktion til at vise popup vindue
-    function popup() {
-        mainContent.classList.add('hidden');
-        popUp.classList.remove('hidden');
-        stemme.pause(); /* stopper Sten med at snakke ved visning af popup */
-    };
+// funktion til at vise popup vindue
+function popup() {
+    mainContent.classList.add('hidden');
+    popUp.classList.remove('hidden');
+    stemme.pause(); /* stopper Sten med at snakke ved visning af popup */
+};
 
-    // funktion til at fjerne popup vindue
-    function close() {
-        mainContent.classList.remove('hidden');
-        popUp.classList.add('hidden');
-    };
-    `
+// funktion til at fjerne popup vindue
+function close() {
+    mainContent.classList.remove('hidden');
+    popUp.classList.add('hidden');
+};`
 
 #### Timer
 På hele siden har vi anvendt en EventListener som lytter efter om indholdet i DOM er indlæst. Når det er sket, sætter den gang i funktionen resetTimer(). Den ene timer sender brugeren tilbage til start-siden efter 50 sekunder med inaktivitet. Den anden timer er loading-skærmen der viser indholdet på siden efter minimum 2,5 sekunder, eller efter indholdet på siden er indlæst.
 
 ##### inactive.js
+
 `document.addEventListener('DOMContentLoaded', () => {
     let inactivityTime = 50000; // Tiden i millisekunder
     let timeoutId;
@@ -84,12 +82,11 @@ På hele siden har vi anvendt en EventListener som lytter efter om indholdet i D
 
     // Starter timeren på ny
     resetTimer();
-});
-    `
+});`
 
 ##### loader.js
-`
-document.addEventListener("DOMContentLoaded", function() {
+
+`document.addEventListener("DOMContentLoaded", function() {
     setTimeout(() => {
         hideLoader();
         showContent();
@@ -106,8 +103,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const content = document.getElementById("content");
         content.style.display = "block";
     }
-});
-`
+});`
     
 
 ### Musikken i baggrunden
