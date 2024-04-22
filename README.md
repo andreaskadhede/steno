@@ -11,7 +11,35 @@ Linket giver os et aktivt tal af hvor mange mennesker der befinder sig på jorde
 
 Vi har valgt at bruge denne [API](http://api.worldbank.org/v2/country/WLD/indicator/SP.POP.TOTL?format=json), for at skabe en overrakelses effekt hos brugeren. Samtidig er det en af de få data om rummet, vi har adgang til at bruge.
 
-For at få det mest aktuelle tal omkring befolkningen, har vi anvendt Java Script til at hente data hvert 6. sekund. Derved kunne der være en mulighed for, at tallet opdatere, imens man kigger på det.
+For at få det mest aktuelle tal omkring befolkningen, har vi anvendt JavaScript til at hente data hvert 6. sekund. Derved kunne der være en mulighed for, at tallet opdatere, imens man kigger på det.
+
+            function fetchWorldPopulation() {
+        // API endpoint for verdens population
+        const url = "http://api.worldbank.org/v2/country/WLD/indicator/SP.POP.TOTL?format=json";
+
+        // Fetch data fra API
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                // henter populations data
+                const worldPopulation = data[1].filter(item => item.value !== null)[0].value;
+                const formattedPopulation = worldPopulation.toLocaleString(); /* Giver det lange tal punktummer, så det er nemmere at læse */
+
+                console.log(`World Population: ${formattedPopulation}`);
+                let population = document.getElementById("population");
+                population.innerHTML = `${formattedPopulation}`; /* Ændrer tallet på skærmen til det rigtige tal */
+
+            })
+            .catch(error => {
+                console.error("Error fetching data:", error);
+            }); 
+        }
+
+    // Kalder funktionen for at hente data
+    fetchWorldPopulation();
+
+    // Henter data hvert 6 sekund
+    setInterval(fetchWorldPopulation, 6000);
 
 #### Solens grader
 Udover befolknigenstallet, havde vi intention om at få implemetret solens temperatur som et JSON-objekt. Dette var dog desværre ikke muligt, da den data ikke findes som et JSON-objekt. Vi forsøgte at anvende den tilgængelige data i stedet, både ved at omregne til grader Celsius og ved at anvende de andre data. Disse var enten ikke korrekte eller data som ikke ville være forståeligt for vores målgruppe.
