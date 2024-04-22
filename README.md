@@ -9,13 +9,13 @@ Vi har i dette projekt arbejdet med en interaktiv løsning til Steno Museet, med
 Vi har i vores projekt implementeret et JSON-objekt gennem et link fra en aktiv kilde ved brug af JSON. 
 Linket giver os et aktivt tal af hvor mange mennesker der befinder sig på jorden. 
 
-Vi har valgt at bruge denne [API](http://api.worldbank.org/v2/country/WLD/indicator/SP.POP.TOTL?format=json), for at skabe en overrakelses effekt hos brugeren. Samtidig er det en af de få data om rummet, vi har adgang til at bruge.
+Vi har valgt at bruge denne [API](https://api.worldbank.org/v2/country/WLD/indicator/SP.POP.TOTL?format=json) https://api.worldbank.org/v2/country/WLD/indicator/SP.POP.TOTL?format=json, for at skabe en overrakelses effekt hos brugeren. Samtidig er det en af de få data om rummet, vi har adgang til at bruge.
 
 For at få det mest aktuelle tal omkring befolkningen, har vi anvendt JavaScript til at hente data hvert 6. sekund. Derved kunne der være en mulighed for, at tallet opdatere, imens man kigger på det.
 
             function fetchWorldPopulation() {
         // API endpoint for verdens population
-        const url = "http://api.worldbank.org/v2/country/WLD/indicator/SP.POP.TOTL?format=json";
+        const url = "https://api.worldbank.org/v2/country/WLD/indicator/SP.POP.TOTL?format=json";
 
         // Fetch data fra API
         fetch(url)
