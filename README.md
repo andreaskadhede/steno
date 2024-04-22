@@ -16,6 +16,8 @@ For at få det mest aktuelle tal omkring befolkningen, har vi anvendt Java Scrip
 #### Solens grader
 Udover befolknigenstallet, havde vi intention om at få implemetret solens temperatur som et JSON-objekt. Dette var dog desværre ikke muligt, da den data ikke findes som et JSON-objekt. Vi forsøgte at anvende den tilgængelige data i stedet, både ved at omregne til grader Celsius og ved at anvende de andre data. Disse var enten ikke korrekte eller data som ikke ville være forståeligt for vores målgruppe.
 
+
+
 ### JS-Events
 Vi har i vores løsning anvendt forskellige EventListeners til at udløse events på siden.
 
@@ -105,6 +107,7 @@ På hele siden har vi anvendt en EventListener som lytter efter om indholdet i D
         }
     });
     
+
 
 ### Musikken i baggrunden
 
